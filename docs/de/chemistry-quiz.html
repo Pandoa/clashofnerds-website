@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Clash of Nerds | 1v1 Trivia & Knowledge Quiz</title>
-<meta name="description" content="Clash of Nerds is a fast-paced 1v1 trivia and knowledge quiz. Challenge players, test your knowledge across geography, science, countries, capitals, flags, astronomy and more, earn trophies and climb the ranks.">
-<meta name="keywords" content="trivia,quiz,1v1 quiz,knowledge quiz,trivia game,geography quiz,science quiz,countries,capitals,flags,astronomy,chemistry">
-<meta property="og:title" content="Clash of Nerds | 1v1 Trivia & Knowledge Quiz">
-<meta property="og:description" content="Challenge your knowledge in fast-paced 1v1 quiz duels. Earn trophies, unlock topics and climb the ranks.">
+<title>Chemie-Quiz — Elemente, Reaktionen & Formeln | Clash of Nerds</title>
+<meta name="description" content="Kostenloses Chemie-Quiz zu Elementen, Periodensystem, Reaktionen und Formeln. Teste dich allein oder spiele 1v1 Quiz-Duelle gegen echte Spieler.">
+<meta name="keywords" content="chemie quiz,chemiequiz,periodensystem quiz,elemente quiz,chemie trivia,chemische elemente quiz,chemietest,chemiefragen,chemie quiz online">
+<meta property="og:title" content="Chemie-Quiz — Elemente, Reaktionen & Formeln">
+<meta property="og:description" content="Kostenloses Chemie-Quiz zu Elementen, Reaktionen und Formeln. Spiele allein oder duelliere echte Spieler 1v1.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+<link rel="icon" type="image/png" href="https://pandoa.github.io/clashofnerds-website/favicon.png">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://pandoa.github.io/clashofnerds-website/sitemap.xml">
+<link rel="alternate" hreflang="ar" href="https://pandoa.github.io/clashofnerds-website/ar/">
+<link rel="alternate" hreflang="de" href="https://pandoa.github.io/clashofnerds-website/de/">
+<link rel="alternate" hreflang="es-ES" href="https://pandoa.github.io/clashofnerds-website/es-ES/">
+<link rel="alternate" hreflang="es-MX" href="https://pandoa.github.io/clashofnerds-website/es-MX/">
+<link rel="alternate" hreflang="fr" href="https://pandoa.github.io/clashofnerds-website/fr/">
+<link rel="alternate" hreflang="hi" href="https://pandoa.github.io/clashofnerds-website/hi/">
+<link rel="alternate" hreflang="id" href="https://pandoa.github.io/clashofnerds-website/id/">
+<link rel="alternate" hreflang="it" href="https://pandoa.github.io/clashofnerds-website/it/">
+<link rel="alternate" hreflang="ja" href="https://pandoa.github.io/clashofnerds-website/ja/">
+<link rel="alternate" hreflang="ko" href="https://pandoa.github.io/clashofnerds-website/ko/">
+<link rel="alternate" hreflang="pl" href="https://pandoa.github.io/clashofnerds-website/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://pandoa.github.io/clashofnerds-website/pt-BR/">
+<link rel="alternate" hreflang="ru" href="https://pandoa.github.io/clashofnerds-website/ru/">
+<link rel="alternate" hreflang="th" href="https://pandoa.github.io/clashofnerds-website/th/">
+<link rel="alternate" hreflang="tr" href="https://pandoa.github.io/clashofnerds-website/tr/">
+<link rel="alternate" hreflang="vi" href="https://pandoa.github.io/clashofnerds-website/vi/">
+<link rel="alternate" hreflang="zh-CN" href="https://pandoa.github.io/clashofnerds-website/zh-CN/"><link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">
+<link rel="alternate" hreflang="x-default" href="https://pandoa.github.io/clashofnerds-website/">
 
 <style>
 :root{--bg:#fff;--surface:#f5f6fa;--text:#0f1226;--muted:#6b7280;--primary:#1cb0f5;--secondary:#ce82ff;--border:#d5d7eb}
@@ -57,6 +75,14 @@ nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justif
 #privacy-page{display:none;max-width:760px;margin:auto;padding:70px 24px}#privacy-page h2{font-size:clamp(38px,7vw,56px);line-height:1;letter-spacing:-2px;text-transform:uppercase;color:var(--primary)}.privacy-content{color:var(--muted);line-height:1.8;font-size:16px}.privacy-content strong{color:var(--text)}.privacy-content h3{color:var(--secondary);margin-top:35px;text-transform:uppercase;font-size:14px}.privacy-content a{color:var(--primary);font-weight:700;text-decoration:none}
 footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;font-weight:700;border-top:1px solid var(--border)}
 
+footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:700;text-align:center}
+.footer-sites{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;line-height:1.8}
+.footer-sites a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:600}
+.footer-sites a:hover{color:var(--primary);text-decoration:underline}
+.footer-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.footer-meta a{color:var(--muted);text-decoration:none;font-weight:700}
+.footer-meta a:hover{color:var(--primary);text-decoration:underline}
+
 @media(max-width:650px){nav{padding:0 16px}.logo{font-size:14px}.logo img{width:31px;height:31px}.nav-links{gap:16px}.nav-links a{font-size:10px}.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.frame{width:210px}.carousel{gap:16px}.section,.languages,.cta-section{padding:70px 20px}.language-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -65,8 +91,8 @@ footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;fon
 
 <nav>
 <div class="nav-inner">
-<div class="logo" onclick="location.hash='home'"><img src="logo.png" alt="Clash of Nerds">Clash of Nerds</div>
-<div class="nav-links"><a href="#home">Overview</a><a href="#privacy">Privacy</a></div>
+<div class="logo" onclick="location.hash='home'"><img src="https://pandoa.github.io/clashofnerds-website/logo.png" alt="Clash of Nerds">Clash of Nerds</div>
+<div class="nav-links"><a href="#home">Übersicht</a><a href="#privacy">Datenschutz</a></div>
 </div>
 </nav>
 
@@ -75,49 +101,49 @@ footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;fon
 <section class="hero">
 <div class="hero-bg"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
 <div class="hero-content">
-<img src="logo.png" alt="Clash of Nerds trivia game" id="top-logo">
-<h1>KNOW MORE.<br><span>WIN MORE.</span></h1>
-<p>Challenge your knowledge in fast-paced 1v1 quiz duels. Answer quickly, beat your opponent, earn trophies, and climb the ranks.</p>
+<img src="https://pandoa.github.io/clashofnerds-website/logo.png" alt="Clash of Nerds Chemie-Quiz Spiel" id="top-logo">
+<h1>CHEMIE-QUIZ.<br><span>ELEMENTE. REAKTIONEN. FORMELN.</span></h1>
+<p>Kostenloses Chemie-Quiz zum Periodensystem, zu Elementen, Reaktionen und Formeln. Teste dich allein oder tritt gegen echte Spieler in 1v1 Quiz-Duellen an.</p>
 <div class="badge-container">
-<a href="https://apps.apple.com/us/app/clash-of-nerds-brain-battles/id6803526268">
-<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Clash of Nerds on the App Store">
+<a href="https://apps.apple.com/us/app/wordito-semantic-game/id6758211743">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Lade Clash of Nerds im App Store herunter">
 </a>
 </div>
 </div>
 </section>
 
-<section class="showcase" aria-label="Clash of Nerds gameplay screenshots">
+<section class="showcase" aria-label="Clash of Nerds Chemie-Quiz Screenshots">
 <div class="carousel">
-<div class="frame"><img src="frames/frame-1.png" alt="Clash of Nerds 1v1 quiz"></div>
-<div class="frame"><img src="frames/frame-2.png" alt="Clash of Nerds quiz gameplay"></div>
-<div class="frame"><img src="frames/frame-3.png" alt="Clash of Nerds knowledge duel"></div>
-<div class="frame"><img src="frames/frame-4.png" alt="Clash of Nerds quiz topics"></div>
-<div class="frame"><img src="frames/frame-5.png" alt="Clash of Nerds trivia game"></div>
-<div class="frame"><img src="frames/frame-6.png" alt="Clash of Nerds trophies and ranks"></div>
-<div class="frame"><img src="frames/frame-7.png" alt="Clash of Nerds knowledge challenge"></div>
-<div class="frame"><img src="frames/frame-1.png" alt=""></div>
-<div class="frame"><img src="frames/frame-2.png" alt=""></div>
-<div class="frame"><img src="frames/frame-3.png" alt=""></div>
-<div class="frame"><img src="frames/frame-4.png" alt=""></div>
-<div class="frame"><img src="frames/frame-5.png" alt=""></div>
-<div class="frame"><img src="frames/frame-6.png" alt=""></div>
-<div class="frame"><img src="frames/frame-7.png" alt=""></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-1.png" alt="Clash of Nerds Chemie-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-2.png" alt="Clash of Nerds Periodensystem-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-3.png" alt="Clash of Nerds Elemente-Quiz-Duell"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-4.png" alt="Clash of Nerds Chemische-Reaktionen-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-5.png" alt="Clash of Nerds Chemie-Trivia-Spiel"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-6.png" alt="Clash of Nerds Chemie-Quiz Trophäen"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-7.png" alt="Clash of Nerds Chemie-Quiz Herausforderung"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-1.png" alt="Clash of Nerds Chemie-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-2.png" alt="Clash of Nerds Periodensystem-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-3.png" alt="Clash of Nerds Elemente-Quiz-Duell"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-4.png" alt="Clash of Nerds Chemische-Reaktionen-Quiz"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-5.png" alt="Clash of Nerds Chemie-Trivia-Spiel"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-6.png" alt="Clash of Nerds Chemie-Quiz Trophäen"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-7.png" alt="Clash of Nerds Chemie-Quiz Herausforderung"></div>
 </div>
 </section>
 
 <section class="section">
-<div class="section-label">TEST YOUR KNOWLEDGE</div>
-<h2>KNOWLEDGE<br><span>MEETS COMPETITION</span></h2>
-<p>Battle other players in competitive trivia covering geography, science, countries, capitals, flags, astronomy, chemistry and more. Get answers right, earn trophies, unlock new topics and climb the ranks.</p>
+<div class="section-label">CHEMIE-THEMEN</div>
+<h2>ELEMENTE,<br><span>REAKTIONEN & FORMELN</span></h2>
+<p>Teste dein Wissen zum Periodensystem, zu chemischen Elementen, Reaktionen und Formeln. Spiele allein zum Lernen oder duelliere echte Spieler 1v1, um deine Chemie zu testen.</p>
 <div class="pills">
-<span class="pill">Geography</span><span class="pill">Science</span><span class="pill">Countries</span><span class="pill">Capitals</span><span class="pill">Flags</span><span class="pill">Astronomy</span><span class="pill">Chemistry</span><span class="pill">General Knowledge</span>
+<span class="pill">Geografie</span><span class="pill">Wissenschaft</span><span class="pill">Länder</span><span class="pill">Hauptstädte</span><span class="pill">Flaggen</span><span class="pill">Astronomie</span><span class="pill">Chemie</span><span class="pill">Allgemeinwissen</span>
 </div>
 </section>
 
 <section class="languages">
-<div class="section-label">PLAY YOUR WAY</div>
-<h2>AVAILABLE<br><span>IN 19 LANGUAGES</span></h2>
-<p>Play Clash of Nerds in your language and challenge your knowledge across the world.</p>
+<div class="section-label">SPIEL AUF DEINE ART</div>
+<h2>VERFÜGBAR<br><span>IN 20 SPRACHEN</span></h2>
+<p>Spiele das Chemie-Quiz in deiner Sprache und teste dein Wissen über Elemente, Reaktionen und Formeln.</p>
 <div class="language-grid">
 <div><img src="https://flagcdn.com/w40/gb.png" alt="">English</div>
 <div><img src="https://flagcdn.com/w40/de.png" alt="">Deutsch</div>
@@ -130,6 +156,7 @@ footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;fon
 <div><img src="https://flagcdn.com/w40/kr.png" alt="">한국어</div>
 <div><img src="https://flagcdn.com/w40/nl.png" alt="">Nederlands</div>
 <div><img src="https://flagcdn.com/w40/pl.png" alt="">Polski</div>
+<div><img src="https://flagcdn.com/w40/pt.png" alt="">Português</div>
 <div><img src="https://flagcdn.com/w40/br.png" alt="">Português (Brasil)</div>
 <div><img src="https://flagcdn.com/w40/ru.png" alt="">Русский</div>
 <div><img src="https://flagcdn.com/w40/th.png" alt="">ภาษาไทย</div>
@@ -142,12 +169,12 @@ footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;fon
 </section>
 
 <section class="cta-section">
-<div class="eyebrow">READY TO CLASH?</div>
-<h2>PROVE WHAT<br>YOU KNOW.</h2>
-<p style="max-width:600px;margin:18px auto;color:var(--muted);line-height:1.6">Think you have what it takes to reach the top? Download Clash of Nerds and start your first knowledge duel.</p>
+<div class="eyebrow">SPIELE DAS CHEMIE-QUIZ</div>
+<h2>CHEMIE-<br>DUELL.</h2>
+<p style="max-width:600px;margin:18px auto;color:var(--muted);line-height:1.6">Glaubst du, du kennst das Periodensystem und chemische Reaktionen? Lade Clash of Nerds herunter und beweise es in einem 1v1 Chemie-Quiz-Duell.</p>
 <div class="badge-container">
 <a href="https://apps.apple.com/us/app/wordito-semantic-game/id6758211743">
-<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Clash of Nerds on the App Store">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Lade Clash of Nerds im App Store herunter">
 </a>
 </div>
 <p style="margin-top:25px"><a href="mailto:support@clashofnerds.com" class="email-btn">support@clashofnerds.com</a></p>
@@ -196,7 +223,24 @@ footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;fon
 </div>
 </main>
 
-<footer>&copy; 2026 Clash of Nerds &bull; All Rights Reserved</footer>
+<footer>
+  <ul class="footer-sites">
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/index.html" target="_blank" rel="noopener">1v1 Quiz-Duell — Trivia & Wissensquiz | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/geography-quiz.html" target="_blank" rel="noopener">Geografie-Quiz — Länder, Hauptstädte & Flaggen | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/flags-quiz.html" target="_blank" rel="noopener">Flaggen-Quiz — Errate die Flagge Jedes Landes | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/capitals-quiz.html" target="_blank" rel="noopener">Hauptstädte-Quiz — Errate die Hauptstadt Jedes Landes | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/science-quiz.html" target="_blank" rel="noopener">Wissenschafts-Quiz — Physik, Biologie & Chemie | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/astronomy-quiz.html" target="_blank" rel="noopener">Astronomie-Quiz — Planeten, Sterne & Weltraum | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/chemistry-quiz.html" target="_blank" rel="noopener">Chemie-Quiz — Elemente, Reaktionen & Formeln | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/general-knowledge-quiz.html" target="_blank" rel="noopener">Allgemeinwissen-Quiz — 1v1 Trivia-Duell | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/de/trivia-questions.html" target="_blank" rel="noopener">Trivia-Fragen & Antworten — Kostenloses Quiz-Spiel | Clash of Nerds</a></li>
+  </ul>
+  <div class="footer-meta">
+    <span>© 2026 Clash of Nerds • Alle Rechte vorbehalten</span>
+    <span aria-hidden="true">•</span>
+    <a href="#privacy">Datenschutzerklärung</a>
+  </div>
+</footer>
 
 <script>
 function show(page){

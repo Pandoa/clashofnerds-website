@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>천문학 퀴즈 — 행성, 별 & 우주 | Clash of Nerds</title>
+<meta name="description" content="행성, 별, 은하, 우주에 대한 무료 천문학 퀴즈. 혼자 테스트하거나 실제 플레이어와 1:1 퀴즈 대결을 플레이하세요. 우주를 빠르게 배우세요.">
+<meta name="keywords" content="천문학 퀴즈,우주 퀴즈,행성 퀴즈,천문학 상식,우주 상식,행성 퀴즈,태양계 퀴즈,별 퀴즈,우주 퀴즈 게임,천문학 퀴즈 게임">
+<meta property="og:title" content="천문학 퀴즈 — 행성, 별 & 우주">
+<meta property="og:description" content="행성, 별, 은하, 우주에 대한 무료 천문학 퀴즈. 혼자 플레이하거나 실제 플레이어와 1:1 대결.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="https://pandoa.github.io/clashofnerds-website/favicon.png">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://pandoa.github.io/clashofnerds-website/sitemap.xml">
+<link rel="alternate" hreflang="ar" href="https://pandoa.github.io/clashofnerds-website/ar/">
+<link rel="alternate" hreflang="de" href="https://pandoa.github.io/clashofnerds-website/de/">
+<link rel="alternate" hreflang="es-ES" href="https://pandoa.github.io/clashofnerds-website/es-ES/">
+<link rel="alternate" hreflang="es-MX" href="https://pandoa.github.io/clashofnerds-website/es-MX/">
+<link rel="alternate" hreflang="fr" href="https://pandoa.github.io/clashofnerds-website/fr/">
+<link rel="alternate" hreflang="hi" href="https://pandoa.github.io/clashofnerds-website/hi/">
+<link rel="alternate" hreflang="id" href="https://pandoa.github.io/clashofnerds-website/id/">
+<link rel="alternate" hreflang="it" href="https://pandoa.github.io/clashofnerds-website/it/">
+<link rel="alternate" hreflang="ja" href="https://pandoa.github.io/clashofnerds-website/ja/">
+<link rel="alternate" hreflang="ko" href="https://pandoa.github.io/clashofnerds-website/ko/">
+<link rel="alternate" hreflang="pl" href="https://pandoa.github.io/clashofnerds-website/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://pandoa.github.io/clashofnerds-website/pt-BR/">
+<link rel="alternate" hreflang="ru" href="https://pandoa.github.io/clashofnerds-website/ru/">
+<link rel="alternate" hreflang="th" href="https://pandoa.github.io/clashofnerds-website/th/">
+<link rel="alternate" hreflang="tr" href="https://pandoa.github.io/clashofnerds-website/tr/">
+<link rel="alternate" hreflang="vi" href="https://pandoa.github.io/clashofnerds-website/vi/">
+<link rel="alternate" hreflang="zh-CN" href="https://pandoa.github.io/clashofnerds-website/zh-CN/"><link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">
+<link rel="alternate" hreflang="x-default" href="https://pandoa.github.io/clashofnerds-website/">
+
+<style>
+:root{--bg:#fff;--surface:#f5f6fa;--text:#0f1226;--muted:#6b7280;--primary:#1cb0f5;--secondary:#ce82ff;--border:#d5d7eb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{width:100%;max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:950;text-transform:uppercase;cursor:pointer}.logo img{width:34px;height:34px;object-fit:cover;border-radius:11px}
+.nav-links{display:flex;gap:28px}.nav-links a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.nav-links a:hover{color:var(--primary)}
+
+.hero{position:relative;overflow:hidden;text-align:center;padding:76px 20px 65px;background:#fff}
+.hero-bg{position:absolute;inset:-100px;pointer-events:none;overflow:hidden;opacity:.45}
+.orb{position:absolute;border-radius:50%;filter:blur(2px);animation:float 12s ease-in-out infinite}
+.orb.a{width:320px;height:320px;left:4%;top:15%;background:rgba(28,176,245,.13)}
+.orb.b{width:260px;height:260px;right:7%;top:0;background:rgba(206,130,255,.13);animation-delay:-4s}
+.orb.c{width:180px;height:180px;left:48%;bottom:-100px;background:rgba(88,204,2,.08);animation-delay:-8s}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(25px,-20px,0) scale(1.08)}}
+.hero-content{position:relative;z-index:1;max-width:850px;margin:auto}
+#top-logo{width:min(180px,50vw);height:auto;border-radius:30px;margin-bottom:28px;box-shadow:0 16px 40px rgba(15,18,38,.13)}
+.hero h1{margin:0;font-size:clamp(43px,8vw,76px);line-height:.9;letter-spacing:-4px;font-weight:950;text-transform:uppercase;color:var(--primary)}.hero h1 span{color:var(--secondary)}
+.hero p{max-width:600px;margin:22px auto 0;color:var(--muted);font-size:18px;line-height:1.55}
+.badge-container{margin-top:30px}.badge-container a{display:inline-flex;transition:transform .2s}.badge-container a:hover{transform:scale(1.04)}.badge-container img{height:52px;width:auto}
+
+.showcase{padding:70px 0 90px;overflow:hidden;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.carousel{display:flex;gap:22px;width:max-content;padding:0 24px;animation:scroll 45s linear infinite}
+.frame{width:245px;flex:none;border:6px solid #fff;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 15px 45px rgba(15,18,38,.12)}
+.frame img{display:block;width:100%;height:auto}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.section{padding:90px 20px;text-align:center;background:#fff}
+.section-label{font-size:11px;font-weight:950;letter-spacing:2px;text-transform:uppercase;color:var(--primary)}
+.section h2,.languages h2{margin:10px 0 0;font-size:clamp(32px,6vw,54px);line-height:.95;letter-spacing:-2px;text-transform:uppercase;font-weight:950;color:var(--primary)}
+.section h2 span,.languages h2 span{color:var(--secondary)}
+.section p,.languages p{max-width:650px;margin:20px auto 0;color:var(--muted);font-size:17px;line-height:1.6}
+.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;max-width:700px;margin:30px auto 0}.pill{padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:999px;font-size:12px;font-weight:900;text-transform:uppercase;color:var(--primary)}.pill:nth-child(even){color:var(--secondary)}
+
+.languages{padding:90px 20px;text-align:center;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.language-grid{max-width:900px;margin:35px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.language-grid div{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:10px 12px;background:#fff;border:1px solid var(--border);border-radius:14px;font-size:14px;font-weight:800}
+.language-grid img{width:25px;height:18px;object-fit:cover;border-radius:3px;box-shadow:0 0 0 1px rgba(15,18,38,.08)}
+
+.cta-section{text-align:center;padding:90px 20px;background:#fff}.cta-section .eyebrow{font-size:11px;font-weight:950;letter-spacing:2px;color:var(--primary)}.cta-section h2{margin:10px 0;font-size:clamp(32px,6vw,50px);line-height:.95;letter-spacing:-2px;text-transform:uppercase}.email-btn{color:var(--primary);font-size:18px;font-weight:900;text-decoration:none}.email-btn:hover{color:var(--secondary)}
+
+#privacy-page{display:none;max-width:760px;margin:auto;padding:70px 24px}#privacy-page h2{font-size:clamp(38px,7vw,56px);line-height:1;letter-spacing:-2px;text-transform:uppercase;color:var(--primary)}.privacy-content{color:var(--muted);line-height:1.8;font-size:16px}.privacy-content strong{color:var(--text)}.privacy-content h3{color:var(--secondary);margin-top:35px;text-transform:uppercase;font-size:14px}.privacy-content a{color:var(--primary);font-weight:700;text-decoration:none}
+footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;font-weight:700;border-top:1px solid var(--border)}
+
+footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:700;text-align:center}
+.footer-sites{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;line-height:1.8}
+.footer-sites a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:600}
+.footer-sites a:hover{color:var(--primary);text-decoration:underline}
+.footer-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.footer-meta a{color:var(--muted);text-decoration:none;font-weight:700}
+.footer-meta a:hover{color:var(--primary);text-decoration:underline}
+
+@media(max-width:650px){nav{padding:0 16px}.logo{font-size:14px}.logo img{width:31px;height:31px}.nav-links{gap:16px}.nav-links a{font-size:10px}.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.frame{width:210px}.carousel{gap:16px}.section,.languages,.cta-section{padding:70px 20px}.language-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-inner">
+<div class="logo" onclick="location.hash='home'"><img src="https://pandoa.github.io/clashofnerds-website/logo.png" alt="Clash of Nerds">Clash of Nerds</div>
+<div class="nav-links"><a href="#home">개요</a><a href="#privacy">개인정보</a></div>
+</div>
+</nav>
+
+<main id="home-page">
+
+<section class="hero">
+<div class="hero-bg"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
+<div class="hero-content">
+<img src="https://pandoa.github.io/clashofnerds-website/logo.png" alt="Clash of Nerds 천문학 퀴즈 게임" id="top-logo">
+<h1>천문학 퀴즈.<br><span>행성. 별. 우주.</span></h1>
+<p>행성, 별, 은하, 위성, 우주 임무에 대한 무료 천문학 퀴즈. 혼자 테스트하거나 실제 플레이어와 1:1 퀴즈 대결에 도전하세요.</p>
+<div class="badge-container">
+<a href="https://apps.apple.com/us/app/wordito-semantic-game/id6758211743">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store에서 Clash of Nerds 다운로드">
+</a>
+</div>
+</div>
+</section>
+
+<section class="showcase" aria-label="Clash of Nerds 천문학 퀴즈 스크린샷">
+<div class="carousel">
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-1.png" alt="Clash of Nerds 천문학 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-2.png" alt="Clash of Nerds 행성 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-3.png" alt="Clash of Nerds 우주 퀴즈 대결"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-4.png" alt="Clash of Nerds 태양계 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-5.png" alt="Clash of Nerds 우주 상식 게임"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-6.png" alt="Clash of Nerds 천문학 퀴즈 트로피"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-7.png" alt="Clash of Nerds 천문학 퀴즈 챌린지"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-1.png" alt="Clash of Nerds 천문학 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-2.png" alt="Clash of Nerds 행성 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-3.png" alt="Clash of Nerds 우주 퀴즈 대결"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-4.png" alt="Clash of Nerds 태양계 퀴즈"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-5.png" alt="Clash of Nerds 우주 상식 게임"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-6.png" alt="Clash of Nerds 천문학 퀴즈 트로피"></div>
+<div class="frame"><img src="https://pandoa.github.io/clashofnerds-website/frames/frame-7.png" alt="Clash of Nerds 천문학 퀴즈 챌린지"></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-label">천문학 주제</div>
+<h2>행성, 별<br><span>& 심우주</span></h2>
+<p>행성, 위성, 별, 은하, 우주 탐사에 대해 퀴즈를 풀어보세요. 혼자 학습하거나 실제 플레이어와 1:1 대결로 우주 지식을 테스트하세요.</p>
+<div class="pills">
+<span class="pill">지리</span><span class="pill">과학</span><span class="pill">국가</span><span class="pill">수도</span><span class="pill">국기</span><span class="pill">천문학</span><span class="pill">화학</span><span class="pill">일반 상식</span>
+</div>
+</section>
+
+<section class="languages">
+<div class="section-label">원하는 방식으로 플레이</div>
+<h2>이용 가능<br><span>20개 언어로</span></h2>
+<p>천문학 퀴즈를 자신의 언어로 플레이하고 행성, 별, 우주에 대한 지식을 테스트하세요.</p>
+<div class="language-grid">
+<div><img src="https://flagcdn.com/w40/gb.png" alt="">English</div>
+<div><img src="https://flagcdn.com/w40/de.png" alt="">Deutsch</div>
+<div><img src="https://flagcdn.com/w40/es.png" alt="">Español</div>
+<div><img src="https://flagcdn.com/w40/fr.png" alt="">Français</div>
+<div><img src="https://flagcdn.com/w40/in.png" alt="">हिन्दी</div>
+<div><img src="https://flagcdn.com/w40/id.png" alt="">Bahasa Indonesia</div>
+<div><img src="https://flagcdn.com/w40/it.png" alt="">Italiano</div>
+<div><img src="https://flagcdn.com/w40/jp.png" alt="">日本語</div>
+<div><img src="https://flagcdn.com/w40/kr.png" alt="">한국어</div>
+<div><img src="https://flagcdn.com/w40/nl.png" alt="">Nederlands</div>
+<div><img src="https://flagcdn.com/w40/pl.png" alt="">Polski</div>
+<div><img src="https://flagcdn.com/w40/pt.png" alt="">Português</div>
+<div><img src="https://flagcdn.com/w40/br.png" alt="">Português (Brasil)</div>
+<div><img src="https://flagcdn.com/w40/ru.png" alt="">Русский</div>
+<div><img src="https://flagcdn.com/w40/th.png" alt="">ภาษาไทย</div>
+<div><img src="https://flagcdn.com/w40/ph.png" alt="">Tagalog</div>
+<div><img src="https://flagcdn.com/w40/tr.png" alt="">Türkçe</div>
+<div><img src="https://flagcdn.com/w40/ua.png" alt="">Українська</div>
+<div><img src="https://flagcdn.com/w40/vn.png" alt="">Tiếng Việt</div>
+<div><img src="https://flagcdn.com/w40/cn.png" alt="">简体中文</div>
+</div>
+</section>
+
+<section class="cta-section">
+<div class="eyebrow">천문학 퀴즈 플레이</div>
+<h2>우주<br>대결.</h2>
+<p style="max-width:600px;margin:18px auto;color:var(--muted);line-height:1.6">행성, 별, 은하를 알고 있다고 생각하나요? Clash of Nerds를 다운로드하고 1:1 천문학 퀴즈 대결에서 증명하세요.</p>
+<div class="badge-container">
+<a href="https://apps.apple.com/us/app/wordito-semantic-game/id6758211743">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store에서 Clash of Nerds 다운로드">
+</a>
+</div>
+<p style="margin-top:25px"><a href="mailto:support@clashofnerds.com" class="email-btn">support@clashofnerds.com</a></p>
+</section>
+
+</main>
+
+<main id="privacy-page">
+<h2>PRIVACY POLICY</h2>
+<div class="privacy-content">
+<p><strong>Last Updated: August 31, 2026</strong></p>
+<p>This Privacy Policy governs your use of the mobile application Clash of Nerds ("the App"). Clash of Nerds is a knowledge quiz game designed for iOS and Android platforms.</p>
+
+<h3>1. Data Collection & Usage</h3>
+<p>Clash of Nerds does not directly collect or store personal information such as your name, email address, or physical address on our own servers. However, the App utilizes trusted third-party services that automatically collect and process certain information to provide analytics and serve advertisements.</p>
+
+<h3>2. Analytics (Google Firebase)</h3>
+<p>We use Google Firebase Analytics to understand how users interact with the App, optimize gameplay features, and monitor app performance. Firebase Analytics may collect and process:</p>
+<ul>
+    <li><strong>Product Interaction:</strong> App launches, screen views, taps, clicks, and gameplay progression.</li>
+    <li><strong>Device Identifiers:</strong> Identifier for Vendors (IDFV) and basic device telemetry data.</li>
+</ul>
+
+<h3>3. Advertising (Google AdMob)</h3>
+<p>We partner with Google AdMob to display advertisements within the App. To deliver, personalize, and measure the effectiveness of ads, AdMob may access and use:</p>
+<ul>
+    <li><strong>Advertising Identifiers:</strong> Identifier for Advertisers (IDFA on iOS) and Google Advertising ID (on Android).</li>
+    <li><strong>Location Data:</strong> Coarse/IP-based approximate location data to ensure regional ad relevance.</li>
+    <li><strong>Advertising Interaction:</strong> Information regarding the specific advertisements you view, click, or interact with.</li>
+</ul>
+<p>Data collected by Google AdMob and Firebase Analytics may be linked to your device identifier and used for cross-app tracking purposes. You can manage or restrict ad tracking at any time via your device system settings (e.g., Apple's App Tracking Transparency prompt or iOS Tracking settings).</p>
+
+<h3>4. In-App Purchases</h3>
+<p>Clash of Nerds offers digital content for purchase. All transactions are securely handled directly by the respective platform app stores:</p>
+<ul>
+    <li><strong>Apple App Store:</strong> Managed via your Apple ID and subject to Apple's Privacy Policy.</li>
+    <li><strong>Google Play Store:</strong> Managed via your Google Account and subject to Google's Privacy Policy.</li>
+</ul>
+<p>The App does not receive, process, or store your credit card numbers, billing addresses, or financial bank details. We only receive a secure transactional token from the app store confirming the purchase to unlock your digital content.</p>
+
+<h3>5. Your Rights & Data Retention</h3>
+<p>We respect your privacy rights. Because we do not host personal profiles or user accounts on an external server database, you can completely erase your localized app history by clearing the App data or uninstalling the App from your mobile device. Cross-app tracking permissions can be modified globally in your device's operating system settings.</p>
+
+<h3>6. Contact Us</h3>
+<p>If you have any questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:support@clashofnerds.com">support@clashofnerds.com</a>.</p>
+</div>
+</main>
+
+<footer>
+  <ul class="footer-sites">
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/index.html" target="_blank" rel="noopener">1:1 퀴즈 대결 — 상식 & 지식 퀴즈 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/geography-quiz.html" target="_blank" rel="noopener">지리 퀴즈 — 국가, 수도 & 국기 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/flags-quiz.html" target="_blank" rel="noopener">국기 퀴즈 — 모든 국가의 국기를 맞춰보세요 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/capitals-quiz.html" target="_blank" rel="noopener">수도 퀴즈 — 모든 국가의 수도를 맞춰보세요 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/science-quiz.html" target="_blank" rel="noopener">과학 퀴즈 — 물리, 생물 & 화학 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/astronomy-quiz.html" target="_blank" rel="noopener">천문학 퀴즈 — 행성, 별 & 우주 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/chemistry-quiz.html" target="_blank" rel="noopener">화학 퀴즈 — 원소, 반응 & 화학식 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/general-knowledge-quiz.html" target="_blank" rel="noopener">일반 상식 퀴즈 — 1:1 상식 배틀 | Clash of Nerds</a></li>
+<li><a href="https://pandoa.github.io/clashofnerds-website/ko/trivia-questions.html" target="_blank" rel="noopener">상식 문제 & 답변 — 무료 퀴즈 게임 | Clash of Nerds</a></li>
+  </ul>
+  <div class="footer-meta">
+    <span>© 2026 Clash of Nerds • 모든 권리 보유</span>
+    <span aria-hidden="true">•</span>
+    <a href="#privacy">개인정보 처리방침</a>
+  </div>
+</footer>
+
+<script>
+function show(page){
+document.getElementById('home-page').style.display=page==='home'?'block':'none';
+document.getElementById('privacy-page').style.display=page==='privacy'?'block':'none';
+if(location.hash.substring(1)!==page)location.hash=page;
+window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',()=>show(location.hash.substring(1)||'home'));
+window.addEventListener('DOMContentLoaded',()=>show(location.hash.substring(1)||'home'));
+</script>
+
+</body>
+</html>
