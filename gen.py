@@ -25,6 +25,32 @@ def main():
         ]
     )
     xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'
+    
+    flags = {
+        "ar": "sa",
+        "de": "de",
+        "en": "gb",
+        "es-ES": "es",
+        "es-MX": "mx",
+        "fr": "fr",
+        "hi": "in",
+        "id": "id",
+        "it": "it",
+        "ja": "jp",
+        "ko": "kr",
+        "pl": "pl",
+        "pt-BR": "br",
+        "ru": "ru",
+        "th": "th",
+        "tr": "tr",
+        "vi": "vn",
+        "zh-CN": "cn",
+    }
+
+    lang_pages = "\n".join([
+        f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}"></a></li>'
+        for lang in languages.keys()
+    ])
 
     pages = 0
     for lang, all_props in languages.items():
@@ -43,6 +69,7 @@ def main():
             props["langcode"] = lang
             props["xlangs"] = xlangs
             props["pseoSites"] = pseo_links
+            props["langSites"] = lang_pages
 
             for key, value in props.items():
                 lang_template = lang_template.replace("{{" + key + "}}", value)

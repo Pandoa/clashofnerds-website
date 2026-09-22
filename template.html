@@ -67,6 +67,8 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 .footer-meta a{color:var(--muted);text-decoration:none;font-weight:700}
 .footer-meta a:hover{color:var(--primary);text-decoration:underline}
 
+.site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;}
+
 @media(max-width:650px){nav{padding:0 16px}.logo{font-size:14px}.logo img{width:31px;height:31px}.nav-links{gap:16px}.nav-links a{font-size:10px}.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.frame{width:210px}.carousel{gap:16px}.section,.languages,.cta-section{padding:70px 20px}.language-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -210,6 +212,10 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <footer>
   <ul class="footer-sites">
 {{pseoSites}}
+  </ul>
+  
+  <ul class="footer-sites">
+{{langSites}}
   </ul>
   <div class="footer-meta">
     <span>{{footerCopyright}}</span>
