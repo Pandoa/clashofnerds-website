@@ -103,6 +103,7 @@ flags = {
     "zh-CN": "cn",
 }
 
+
 def main():
     language_files = os.listdir("lang")
 
@@ -123,13 +124,14 @@ def main():
             if lang
         ]
     )
-    xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'   
-    
+    xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'
 
-    lang_pages = "\n".join([
-        f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE[lang.split('-')[0]]}</a></li>'
-        for lang in languages.keys()
-    ])
+    lang_pages = "\n".join(
+        [
+            f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE[lang.split('-')[0]]}</a></li>'
+            for lang in languages.keys()
+        ]
+    )
 
     pages = 0
     for lang, all_props in languages.items():
@@ -138,11 +140,11 @@ def main():
 
         pseo_links = "\n".join(
             [
-                f'<li><a href="https://pandoa.github.io/clashofnerds-website/{lang}/{props["out_filename"]}" target="_blank" rel="noopener">{props["title"]}</a></li>'
+                f'<li><a href="https://pandoa.github.io/clashofnerds-website/{f"{lang}/" if lang else ""}{props["out_filename"]}" target="_blank" rel="noopener">{props["title"]}</a></li>'
                 for props in all_props
             ]
         )
-        
+
         lang = lang or "en"
 
         for props in all_props:
@@ -151,7 +153,9 @@ def main():
             props["xlangs"] = xlangs
             props["pseoSites"] = pseo_links
             props["langSites"] = lang_pages
-            props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0])
+            props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
+                lang
+            ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0])
 
             for key, value in props.items():
                 lang_template = lang_template.replace("{{" + key + "}}", value)
