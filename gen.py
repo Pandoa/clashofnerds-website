@@ -6,7 +6,7 @@ from pathlib import Path
 LANGUAGE_TO_GOOGLE_PLAY_BADGE = {
     "af": "Afrikaans",
     "sq": "Albanian",
-    "ar": "Arabic-Saudi-Arabia",
+    "ar-SA": "Arabic-Saudi-Arabia",
     "hy": "Armenian",
     "az": "Azerbaijani",
     "eu": "Basque",
@@ -128,7 +128,7 @@ def main():
 
     lang_pages = "\n".join(
         [
-            f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE[lang.split('-')[0]]}</a></li>'
+            f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split('-')[0]) or 'English'}</a></li>'
             for lang in languages.keys()
         ]
     )
@@ -155,7 +155,7 @@ def main():
             props["langSites"] = lang_pages
             props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
                 lang
-            ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0])
+            ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0], "English")
 
             for key, value in props.items():
                 lang_template = lang_template.replace("{{" + key + "}}", value)
