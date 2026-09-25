@@ -3,6 +3,105 @@ import sys
 import json
 from pathlib import Path
 
+LANGUAGE_TO_GOOGLE_PLAY_BADGE = {
+    "af": "Afrikaans",
+    "sq": "Albanian",
+    "ar": "Arabic-Saudi-Arabia",
+    "hy": "Armenian",
+    "az": "Azerbaijani",
+    "eu": "Basque",
+    "be": "Belarusian",
+    "bs": "Bosnian",
+    "bg": "Bulgarian",
+    "my": "Burmese",
+    "ca": "Catalan",
+    "zh-CN": "Chinese-China",
+    "zh-TW": "Chinese-Taiwan",
+    "hr": "Croatian",
+    "cs": "Czech",
+    "da": "Danish",
+    "nl": "Dutch",
+    "en": "English",
+    "et": "Estonian",
+    "fil": "Filipino",
+    "fi": "Finnish",
+    "fr-CA": "French-CA",
+    "fr": "French",
+    "gl": "Galician",
+    "ka": "Georgian",
+    "de": "German",
+    "el": "Greek",
+    "gu": "Gujarati",
+    "he": "Hebrew",
+    "hi": "Hindi",
+    "hu": "Hungarian",
+    "is": "Icelandic",
+    "id": "Indonesian",
+    "ga": "Irish",
+    "it": "Italian",
+    "kn": "Kannada",
+    "kk": "Kazakh",
+    "km": "Khmer",
+    "ko": "Korean",
+    "ky": "Kyrgyz",
+    "lo": "Lao",
+    "lv": "Latvian",
+    "lt": "Lithuanian",
+    "mk": "Macedonian",
+    "ml": "Malayalam",
+    "ms": "Malaysian",
+    "mr": "Marathi",
+    "mn": "Mongolian",
+    "ne": "Nepali",
+    "no": "Norwegian",
+    "fa": "Persian",
+    "pl": "Polish",
+    "pt-BR": "Portuguese-Brazil",
+    "pt-PT": "Portuguese-Portugal",
+    "pa": "Punjabi",
+    "ro": "Romanian",
+    "ru": "Russian",
+    "sr": "Serbian",
+    "si": "Sinhalese",
+    "sk": "Slovak",
+    "sl": "Slovenian",
+    "es-419": "Spanish-LATAM",
+    "es": "Spanish",
+    "sw": "Swahili",
+    "sv": "Swedish",
+    "ta": "Tamil",
+    "te": "Telugu",
+    "th": "Thai",
+    "tr": "Turkish",
+    "uk": "Ukranian",
+    "ur": "Urdu",
+    "uz": "Uzbek",
+    "vi": "Vietnamese",
+    "zu": "Zulu",
+    "bn": "Bengali",
+    "ja": "Japanese",
+}
+
+flags = {
+    "ar": "sa",
+    "de": "de",
+    "en": "gb",
+    "es-ES": "es",
+    "es-MX": "mx",
+    "fr": "fr",
+    "hi": "in",
+    "id": "id",
+    "it": "it",
+    "ja": "jp",
+    "ko": "kr",
+    "pl": "pl",
+    "pt-BR": "br",
+    "ru": "ru",
+    "th": "th",
+    "tr": "tr",
+    "vi": "vn",
+    "zh-CN": "cn",
+}
 
 def main():
     language_files = os.listdir("lang")
@@ -24,31 +123,11 @@ def main():
             if lang
         ]
     )
-    xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'
+    xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'   
     
-    flags = {
-        "ar": "sa",
-        "de": "de",
-        "en": "gb",
-        "es-ES": "es",
-        "es-MX": "mx",
-        "fr": "fr",
-        "hi": "in",
-        "id": "id",
-        "it": "it",
-        "ja": "jp",
-        "ko": "kr",
-        "pl": "pl",
-        "pt-BR": "br",
-        "ru": "ru",
-        "th": "th",
-        "tr": "tr",
-        "vi": "vn",
-        "zh-CN": "cn",
-    }
 
     lang_pages = "\n".join([
-        f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}"></a></li>'
+        f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE[lang.split('-')[0]]}</a></li>'
         for lang in languages.keys()
     ])
 
@@ -63,6 +142,8 @@ def main():
                 for props in all_props
             ]
         )
+        
+        lang = lang or "en"
 
         for props in all_props:
             lang_template = template
@@ -70,6 +151,7 @@ def main():
             props["xlangs"] = xlangs
             props["pseoSites"] = pseo_links
             props["langSites"] = lang_pages
+            props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0])
 
             for key, value in props.items():
                 lang_template = lang_template.replace("{{" + key + "}}", value)

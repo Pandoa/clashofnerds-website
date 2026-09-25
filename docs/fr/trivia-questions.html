@@ -50,7 +50,7 @@ nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justif
 #top-logo{width:min(180px,50vw);height:auto;border-radius:30px;margin-bottom:28px;box-shadow:0 16px 40px rgba(15,18,38,.13)}
 .hero h1{margin:0;font-size:clamp(43px,8vw,76px);line-height:.9;letter-spacing:-4px;font-weight:950;text-transform:uppercase;color:var(--primary)}.hero h1 span{color:var(--secondary)}
 .hero p{max-width:600px;margin:22px auto 0;color:var(--muted);font-size:18px;line-height:1.55}
-.badge-container{margin-top:30px}.badge-container a{display:inline-flex;transition:transform .2s}.badge-container a:hover{transform:scale(1.04)}.badge-container img{height:52px;width:auto}
+.badge-container{margin-top:30px}.badge-container a{display:inline-flex;transition:transform .2s;margin-left: 5px;margin-right:5px}.badge-container a:hover{transform:scale(1.04)}.badge-container img{height:52px;width:auto}
 
 .showcase{padding:70px 0 90px;overflow:hidden;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .carousel{display:flex;gap:22px;width:max-content;padding:0 24px;animation:scroll 45s linear infinite}
@@ -83,7 +83,9 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 .footer-meta a{color:var(--muted);text-decoration:none;font-weight:700}
 .footer-meta a:hover{color:var(--primary);text-decoration:underline}
 
-.site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;}
+.site-lang {display: flex;align-items: center;justify-content: center; margin-left: 3px; margin-right: 3px}
+.site-lang > a {display: flex;align-items: center;justify-content: center;}
+.site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;margin-right: 4px;}
 
 @media(max-width:650px){nav{padding:0 16px}.logo{font-size:14px}.logo img{width:31px;height:31px}.nav-links{gap:16px}.nav-links a{font-size:10px}.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.frame{width:210px}.carousel{gap:16px}.section,.languages,.cta-section{padding:70px 20px}.language-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -108,7 +110,13 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <p>Des milliers de questions de culture générale avec réponses en géographie, sciences, drapeaux, capitales, astronomie et chimie. Jouez en solo, ou affrontez de vrais joueurs en duels de quiz 1v1.</p>
 <div class="badge-container">
 <a href="https://apps.apple.com/us/app/clash-of-nerds-brain-battles/id6803526268">
-<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Télécharger Clash of Nerds sur l’App Store">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr" alt="Télécharger Clash of Nerds sur l’App Store">
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds">
+  <img
+    src="https://pandoa.github.io/clashofnerds-website/svg/GetItOnGooglePlay_Badge_Web_color_French.svg"
+    alt="Get it on Google Play"
+  />
 </a>
 </div>
 </div>
@@ -174,10 +182,18 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <div class="eyebrow">COMMENCER À JOUER GRATUITEMENT</div>
 <h2>RÉPONDEZ.<br>GAGNEZ.</h2>
 <p style="max-width:600px;margin:18px auto;color:var(--muted);line-height:1.6">Des milliers de questions de culture générale vous attendent. Téléchargez Clash of Nerds et commencez à jouer gratuitement.</p>
+
 <div class="badge-container">
-<a href="https://apps.apple.com/us/app/wordito-semantic-game/id6758211743">
-<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Télécharger Clash of Nerds sur l’App Store">
+<a href="https://apps.apple.com/us/app/clash-of-nerds-brain-battles/id6803526268">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr" alt="Télécharger Clash of Nerds sur l’App Store">
 </a>
+<a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds">
+  <img
+    src="https://pandoa.github.io/clashofnerds-website/svg/GetItOnGooglePlay_Badge_Web_color_French.svg"
+    alt="Get it on Google Play"
+  />
+</a>
+</div>
 </div>
 <p style="margin-top:25px"><a href="mailto:support@clashofnerds.com" class="email-btn">support@clashofnerds.com</a></p>
 </section>
@@ -239,24 +255,24 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
   </ul>
   
   <ul class="footer-sites">
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ar"><img src="https://flagcdn.com/w40/sa.png" alt="flag ar"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/de"><img src="https://flagcdn.com/w40/de.png" alt="flag de"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/es-ES"><img src="https://flagcdn.com/w40/es.png" alt="flag es-ES"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/es-MX"><img src="https://flagcdn.com/w40/mx.png" alt="flag es-MX"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/fr"><img src="https://flagcdn.com/w40/fr.png" alt="flag fr"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/hi"><img src="https://flagcdn.com/w40/in.png" alt="flag hi"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/id"><img src="https://flagcdn.com/w40/id.png" alt="flag id"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/it"><img src="https://flagcdn.com/w40/it.png" alt="flag it"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ja"><img src="https://flagcdn.com/w40/jp.png" alt="flag ja"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ko"><img src="https://flagcdn.com/w40/kr.png" alt="flag ko"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/pl"><img src="https://flagcdn.com/w40/pl.png" alt="flag pl"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/pt-BR"><img src="https://flagcdn.com/w40/br.png" alt="flag pt-BR"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ru"><img src="https://flagcdn.com/w40/ru.png" alt="flag ru"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/th"><img src="https://flagcdn.com/w40/th.png" alt="flag th"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/tr"><img src="https://flagcdn.com/w40/tr.png" alt="flag tr"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/vi"><img src="https://flagcdn.com/w40/vn.png" alt="flag vi"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/zh-CN"><img src="https://flagcdn.com/w40/cn.png" alt="flag zh-CN"></a></li>
-<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/"><img src="https://flagcdn.com/w40/gb.png" alt="flag "></a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ar"><img src="https://flagcdn.com/w40/sa.png" alt="flag ar">Arabic-Saudi-Arabia</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/de"><img src="https://flagcdn.com/w40/de.png" alt="flag de">German</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/es-ES"><img src="https://flagcdn.com/w40/es.png" alt="flag es-ES">Spanish</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/es-MX"><img src="https://flagcdn.com/w40/mx.png" alt="flag es-MX">Spanish</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/fr"><img src="https://flagcdn.com/w40/fr.png" alt="flag fr">French</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/hi"><img src="https://flagcdn.com/w40/in.png" alt="flag hi">Hindi</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/id"><img src="https://flagcdn.com/w40/id.png" alt="flag id">Indonesian</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/it"><img src="https://flagcdn.com/w40/it.png" alt="flag it">Italian</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ja"><img src="https://flagcdn.com/w40/jp.png" alt="flag ja">Japanese</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ko"><img src="https://flagcdn.com/w40/kr.png" alt="flag ko">Korean</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/pl"><img src="https://flagcdn.com/w40/pl.png" alt="flag pl">Polish</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/pt-BR"><img src="https://flagcdn.com/w40/br.png" alt="flag pt-BR">Portuguese-Brazil</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/ru"><img src="https://flagcdn.com/w40/ru.png" alt="flag ru">Russian</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/th"><img src="https://flagcdn.com/w40/th.png" alt="flag th">Thai</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/tr"><img src="https://flagcdn.com/w40/tr.png" alt="flag tr">Turkish</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/vi"><img src="https://flagcdn.com/w40/vn.png" alt="flag vi">Vietnamese</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/zh-CN"><img src="https://flagcdn.com/w40/cn.png" alt="flag zh-CN">Chinese-China</a></li>
+<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/"><img src="https://flagcdn.com/w40/gb.png" alt="flag ">English</a></li>
   </ul>
   <div class="footer-meta">
     <span>© 2026 Clash of Nerds • Tous droits réservés</span>
