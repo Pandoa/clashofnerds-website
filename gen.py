@@ -117,15 +117,6 @@ def main():
     with open("template.html", "r", encoding="utf-8") as f:
         template = f.read()
 
-    xlangs = "\n".join(
-        [
-            f'<link rel="alternate" hreflang="{lang}" href="https://clashofnerds.com/{lang}/">'
-            for lang in languages.keys()
-            if lang
-        ]
-    )
-    xlangs += '\n<link rel="alternate" hreflang="en" href="https://clashofnerds.com/">'
-
     lang_pages = "\n".join(
         [
             f'<li class="site-lang"><a href="https://clashofnerds.com/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split('-')[0]) or 'English'}</a></li>'
@@ -149,12 +140,35 @@ def main():
 
         for props in all_props:
             lang_template = template
-            output_name = props["out_filename"].split(".")[0] if props["out_filename"] != "index.html" else ""
-            props["canonical"] = f'<link rel="canonical" href="https://clashofnerds.com/{output_name}">'
+            output_name = (
+                props["out_filename"].split(".")[0]
+                if props["out_filename"] != "index.html"
+                else ""
+            )
+            props["canonical"] = (
+                f'<link rel="canonical" href="https://clashofnerds.com/{lang}/{output_name}">'
+                if len(lang) and lang != "en"
+                else f'<link rel="canonical" href="https://clashofnerds.com/{output_name}">'
+            )
             props["langcode"] = lang
-            props["xlangs"] = xlangs
+            props["xlangs"] = "\n".join(
+                [
+                    f'<link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/{output_name}">',
+                    f'<link rel="alternate" hreflang="en" href="https://clashofnerds.com/{output_name}">',
+                    *[
+                        f'<link rel="alternate" hreflang="{lang}" href="https://clashofnerds.com/{lang}/{output_name}">'
+                        for lang in languages.keys()
+                        if lang
+                    ],
+                ]
+            )
             props["pseoSites"] = pseo_links
             props["langSites"] = lang_pages
+            props["url"] = (
+                f'https://clashofnerds.com/{lang}/{output_name}'
+                if len(lang) and lang != "en"
+                else f'https://clashofnerds.com/{output_name}'
+            )
             props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
                 lang
             ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0], "English")
@@ -186,17 +200,22 @@ def main():
     for pages in translations.values():
         for lang, props in pages.items():
             prefix = f"/{lang}" if lang else ""
-            name = "" if props["out_filename"] == "index.html" else props["out_filename"].removesuffix(".html")
+            name = (
+                ""
+                if props["out_filename"] == "index.html"
+                else props["out_filename"].removesuffix(".html")
+            )
             url = f"{base_url}{prefix}/{name}"
 
-            sitemap += (
-                f"  <url>\n"
-                f"    <loc>{url}</loc>\n"
-            )
+            sitemap += f"  <url>\n" f"    <loc>{url}</loc>\n"
 
             for other_lang, other_props in pages.items():
                 other_prefix = f"/{other_lang}" if other_lang else ""
-                other_name = "" if other_props["out_filename"] == "index.html" else other_props["out_filename"].removesuffix(".html")
+                other_name = (
+                    ""
+                    if other_props["out_filename"] == "index.html"
+                    else other_props["out_filename"].removesuffix(".html")
+                )
                 other_url = f"{base_url}{other_prefix}/{other_name}"
 
                 sitemap += (
