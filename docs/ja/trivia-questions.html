@@ -285,16 +285,22 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 
 <script>
 function show(page){
-document.getElementById('home-page').style.display=page==='home'?'block':'none';
-document.getElementById('privacy-page').style.display=page==='privacy'?'block':'none';
-if(location.hash.substring(1)!==page)location.hash=page;
-window.scrollTo(0,0);
+  const home = document.getElementById('home-page');
+  home.style.display = page === 'home' ? 'block' : 'none';
+  document.getElementById('privacy-page').style.display = page === 'privacy' ? 'block' : 'none';
+
+  if(page === 'privacy' && location.hash !== '#privacy') {
+    location.hash = 'privacy';
+  } else if(page === 'home' && location.hash) {
+    history.replaceState(null, '', location.pathname);
+  }
+
+  window.scrollTo(0,0);
 }
-window.addEventListener('hashchange',()=>show(location.hash.substring(1)||'home'));
-window.addEventListener('DOMContentLoaded',()=>show(location.hash.substring(1)||'home'));
+
+window.addEventListener('hashchange', () => show(location.hash.substring(1) || 'home'));
+window.addEventListener('DOMContentLoaded', () => show(location.hash.substring(1) || 'home'));
 </script>
-
-
 	<script>
   (function () {
     const shouldLoadAnalytics =

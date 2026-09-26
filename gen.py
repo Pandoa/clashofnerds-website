@@ -181,21 +181,23 @@ def main():
             translations.setdefault(props["out_filename"], {})[lang] = props
 
     sitemap = """<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-            xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    """
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+"""
     for pages in translations.values():
         for lang, props in pages.items():
             prefix = f"/{lang}" if lang else ""
-            url = f"{base_url}{prefix}/{props['out_filename']}"
+            name = "" if props["out_filename"] == "index.html" else props["out_filename"].removesuffix(".html")
+            url = f"{base_url}{prefix}/{name}"
 
-            sitemap += f"  <url>\n"
-            sitemap += f"    <loc>{url}</loc>\n"
+            sitemap += (
+                f"  <url>\n"
+                f"    <loc>{url}</loc>\n"
+            )
 
             for other_lang, other_props in pages.items():
                 other_prefix = f"/{other_lang}" if other_lang else ""
-                other_url = f"{base_url}{other_prefix}/{other_props['out_filename']}"
+                other_name = "" if other_props["out_filename"] == "index.html" else other_props["out_filename"].removesuffix(".html")
+                other_url = f"{base_url}{other_prefix}/{other_name}"
 
                 sitemap += (
                     f'    <xhtml:link rel="alternate" '
