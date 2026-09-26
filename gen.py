@@ -119,16 +119,16 @@ def main():
 
     xlangs = "\n".join(
         [
-            f'<link rel="alternate" hreflang="{lang}" href="https://pandoa.github.io/clashofnerds-website/{lang}/">'
+            f'<link rel="alternate" hreflang="{lang}" href="https://clashofnerds.com/{lang}/">'
             for lang in languages.keys()
             if lang
         ]
     )
-    xlangs += '<link rel="alternate" hreflang="en" href="https://pandoa.github.io/clashofnerds-website/">'
+    xlangs += '\n<link rel="alternate" hreflang="en" href="https://clashofnerds.com/">'
 
     lang_pages = "\n".join(
         [
-            f'<li class="site-lang"><a href="https://pandoa.github.io/clashofnerds-website/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split('-')[0]) or 'English'}</a></li>'
+            f'<li class="site-lang"><a href="https://clashofnerds.com/{lang}"><img src="https://flagcdn.com/w40/{flags[lang or 'en']}.png" alt="flag {lang}">{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or 'en') or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split('-')[0]) or 'English'}</a></li>'
             for lang in languages.keys()
         ]
     )
@@ -140,7 +140,7 @@ def main():
 
         pseo_links = "\n".join(
             [
-                f'<li><a href="https://pandoa.github.io/clashofnerds-website/{f"{lang}/" if lang else ""}{props["out_filename"]}" target="_blank" rel="noopener">{props["title"]}</a></li>'
+                f'<li><a href="https://clashofnerds.com/{f"{lang}/" if lang else ""}{props["out_filename"]}" target="_blank" rel="noopener">{props["title"]}</a></li>'
                 for props in all_props
             ]
         )
@@ -149,6 +149,8 @@ def main():
 
         for props in all_props:
             lang_template = template
+            output_name = props["out_filename"].split(".")[0] if props["out_filename"] != "index.html" else ""
+            props["canonical"] = f'<link rel="canonical" href="https://clashofnerds.com/{output_name}">'
             props["langcode"] = lang
             props["xlangs"] = xlangs
             props["pseoSites"] = pseo_links
@@ -169,7 +171,7 @@ def main():
 
     print("Pages generated:", pages)
 
-    base_url = "https://pandoa.github.io/clashofnerds-website"
+    base_url = "https://clashofnerds.com"
 
     # filename -> language -> props
     translations = {}
