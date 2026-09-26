@@ -223,6 +223,12 @@ def main():
                     f'hreflang="{other_lang or "en"}" '
                     f'href="{other_url}"/>\n'
                 )
+            
+            sitemap += (
+                f'    <xhtml:link rel="alternate" '
+                f'hreflang="x-default" '
+                f'href="{base_url}/{name}"/>\n'
+            )
 
             sitemap += "  </url>\n"
 
