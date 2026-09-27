@@ -103,6 +103,26 @@ flags = {
     "zh-CN": "cn",
 }
 
+app_store_locale_map = {
+    "ar": "sa",
+    "de": "de",
+    "en": "us",
+    "es-ES": "es",
+    "es-MX": "mx",
+    "fr": "fr",
+    "hi": "in",
+    "id": "id",
+    "it": "it",
+    "ja": "jp",
+    "ko": "kr",
+    "pl": "pl",
+    "pt-BR": "br",
+    "ru": "ru",
+    "th": "th",
+    "tr": "tr",
+    "vi": "vn",
+    "zh-CN": "cn",
+}
 
 def main():
     language_files = os.listdir("lang")
@@ -172,6 +192,7 @@ def main():
             props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
                 lang
             ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0], "English")
+            props["appstore_lang"] = app_store_locale_map[lang]
 
             for key, value in props.items():
                 lang_template = lang_template.replace("{{" + key + "}}", value)
