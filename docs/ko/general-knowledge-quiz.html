@@ -250,9 +250,94 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 </div>
 </main>
 
-<footer>
-  <ul class="footer-sites">
-<li><a href="https://clashofnerds.com/ko/index.html" target="_blank" rel="noopener">1:1 퀴즈 대결 — 상식 & 지식 퀴즈 | Clash of Nerds</a></li>
+<footer class="site-footer">
+  <style>
+    .site-footer{
+      padding:50px 20px 35px;
+      border-top:1px solid var(--border);
+      background:var(--surface);
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+    }
+    .site-footer__inner{max-width:1000px;margin:0 auto}
+    .site-footer__group{margin:0 0 26px}
+    .site-footer__title{
+      margin:0 0 12px;
+      font-size:11px;
+      font-weight:950;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--primary);
+    }
+    .site-footer__group:nth-of-type(even) .site-footer__title{color:var(--secondary)}
+    .site-footer__list{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:6px 16px;
+      line-height:1.9;
+    }
+    .site-footer__list a{
+      color:var(--muted);
+      text-decoration:none;
+      font-size:12px;
+      font-weight:700;
+      transition:color .15s;
+    }
+    .site-footer__list a:hover,
+    .site-footer__list a:focus-visible{
+      color:var(--primary);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .site-footer__list .site-lang{
+      display:inline-flex;
+      align-items:center;
+      margin:0;
+    }
+    .site-footer__list .site-lang > a > img{
+      border-radius:6px;
+      height:20px;
+      border:1px solid #666;
+      margin-right:5px;
+    }
+    .site-footer__meta{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      padding-top:20px;
+      border-top:1px solid var(--border);
+      font-size:11px;
+      font-weight:700;
+    }
+    .site-footer__meta a{
+      color:var(--muted);
+      text-decoration:none;
+    }
+    .site-footer__meta a:hover,
+    .site-footer__meta a:focus-visible{
+      color:var(--primary);
+      text-decoration:underline;
+    }
+    @media (max-width:650px){
+      .site-footer{padding:40px 16px 25px}
+      .site-footer__group{margin-bottom:22px}
+      .site-footer__list{gap:4px 12px}
+    }
+  </style>
+
+  <div class="site-footer__inner">
+
+    <div class="site-footer__group">
+      <h3 class="site-footer__title">Explore</h3>
+      <ul class="site-footer__list">
+        <li><a href="https://clashofnerds.com/ko/index.html" target="_blank" rel="noopener">1:1 퀴즈 대결 — 상식 & 지식 퀴즈 | Clash of Nerds</a></li>
 <li><a href="https://clashofnerds.com/ko/geography-quiz.html" target="_blank" rel="noopener">지리 퀴즈 — 국가, 수도 & 국기 | Clash of Nerds</a></li>
 <li><a href="https://clashofnerds.com/ko/flags-quiz.html" target="_blank" rel="noopener">국기 퀴즈 — 모든 국가의 국기를 맞춰보세요 | Clash of Nerds</a></li>
 <li><a href="https://clashofnerds.com/ko/capitals-quiz.html" target="_blank" rel="noopener">수도 퀴즈 — 모든 국가의 수도를 맞춰보세요 | Clash of Nerds</a></li>
@@ -261,10 +346,13 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <li><a href="https://clashofnerds.com/ko/chemistry-quiz.html" target="_blank" rel="noopener">화학 퀴즈 — 원소, 반응 & 화학식 | Clash of Nerds</a></li>
 <li><a href="https://clashofnerds.com/ko/general-knowledge-quiz.html" target="_blank" rel="noopener">일반 상식 퀴즈 — 1:1 상식 배틀 | Clash of Nerds</a></li>
 <li><a href="https://clashofnerds.com/ko/trivia-questions.html" target="_blank" rel="noopener">상식 문제 & 답변 — 무료 퀴즈 게임 | Clash of Nerds</a></li>
-  </ul>
-  
-  <ul class="footer-sites">
-<li class="site-lang"><a href="https://clashofnerds.com/ar"><img src="https://flagcdn.com/w40/sa.png" alt="flag ar">English</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__group">
+      <h3 class="site-footer__title">Languages</h3>
+      <ul class="site-footer__list">
+        <li class="site-lang"><a href="https://clashofnerds.com/ar"><img src="https://flagcdn.com/w40/sa.png" alt="flag ar">English</a></li>
 <li class="site-lang"><a href="https://clashofnerds.com/de"><img src="https://flagcdn.com/w40/de.png" alt="flag de">German</a></li>
 <li class="site-lang"><a href="https://clashofnerds.com/es-ES"><img src="https://flagcdn.com/w40/es.png" alt="flag es-ES">Spanish</a></li>
 <li class="site-lang"><a href="https://clashofnerds.com/es-MX"><img src="https://flagcdn.com/w40/mx.png" alt="flag es-MX">Spanish</a></li>
@@ -282,23 +370,39 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <li class="site-lang"><a href="https://clashofnerds.com/vi"><img src="https://flagcdn.com/w40/vn.png" alt="flag vi">Vietnamese</a></li>
 <li class="site-lang"><a href="https://clashofnerds.com/zh-CN"><img src="https://flagcdn.com/w40/cn.png" alt="flag zh-CN">Chinese-China</a></li>
 <li class="site-lang"><a href="https://clashofnerds.com/"><img src="https://flagcdn.com/w40/gb.png" alt="flag ">English</a></li>
-  </ul>
-  <ul class="footer-sites">
-    <li>
-      <a href="https://apps.apple.com/kr/app/clash-of-nerds-brain-battles/id6803526268">
-        Download Clash of Nerds on the AppStore
-      </a>
-    </li>
-    <li>
-      <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds">
-        Download Clash of Nerds on the Google Play Store
-      </a>
-    </li>
-  </ul>
-  <div class="footer-meta">
-    <span>© 2026 Clash of Nerds • 모든 권리 보유</span>
-    <span aria-hidden="true">•</span>
-    <a href="#privacy">개인정보 처리방침</a>
+      </ul>
+    </div>
+
+    <div class="site-footer__group">
+      <h3 class="site-footer__title">Get the App</h3>
+      <ul class="site-footer__list">
+        <li>
+          <a href="https://apps.apple.com/kr/app/clash-of-nerds-brain-battles/id6803526268">App Store</a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds">Google Play</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="site-footer__group">
+      <h3 class="site-footer__title">About the app</h3>
+      <ul class="site-footer__list">
+        <li>
+          <a href="https://app.sensortower.com/overview/6803526268">SensorTower</a>
+        </li>
+        <li>
+          <a href="https://appagg.com/ios-games/casual/clash-of-nerds-brain-battles-44068389.html">AppAgg</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-footer__meta">
+      <span>© 2026 Clash of Nerds • 모든 권리 보유</span>
+      <span aria-hidden="true">·</span>
+      <a href="#privacy">개인정보 처리방침</a>
+    </div>
+
   </div>
 </footer>
 
