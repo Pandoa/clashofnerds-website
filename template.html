@@ -313,23 +313,19 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
       .site-footer__list{gap:4px 12px}
     }
   </style>
-
   <div class="site-footer__inner">
-
     <div class="site-footer__group">
       <h3 class="site-footer__title">Explore</h3>
       <ul class="site-footer__list">
         {{pseoSites}}
       </ul>
     </div>
-
     <div class="site-footer__group">
       <h3 class="site-footer__title">Languages</h3>
       <ul class="site-footer__list">
         {{langSites}}
       </ul>
     </div>
-
     <div class="site-footer__group">
       <h3 class="site-footer__title">Get the App</h3>
       <ul class="site-footer__list">
@@ -341,7 +337,6 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
         </li>
       </ul>
     </div>
-    
     <div class="site-footer__group">
       <h3 class="site-footer__title">About the app</h3>
       <ul class="site-footer__list">
@@ -351,15 +346,16 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
         <li>
           <a href="https://appagg.com/ios-games/casual/clash-of-nerds-brain-battles-44068389.html">AppAgg</a>
         </li>
+        <li>
+          <a href="https://appmagic.rocks/iphone/clash-of-nerds-brain-battles/6803526268">AppMagic</a>
+        </li>
       </ul>
     </div>
-
     <div class="site-footer__meta">
       <span>{{footerCopyright}}</span>
       <span aria-hidden="true">·</span>
       <a href="#privacy">{{footerPrivacyLink}}</a>
     </div>
-
   </div>
 </footer>
 
@@ -368,13 +364,11 @@ function show(page){
   const home = document.getElementById('home-page');
   home.style.display = page === 'home' ? 'block' : 'none';
   document.getElementById('privacy-page').style.display = page === 'privacy' ? 'block' : 'none';
-
   if(page === 'privacy' && location.hash !== '#privacy') {
     location.hash = 'privacy';
   } else if(page === 'home' && location.hash) {
     history.replaceState(null, '', location.pathname);
   }
-
   window.scrollTo(0,0);
 }
 
