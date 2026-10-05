@@ -93,7 +93,7 @@ nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justif
 .section h2,.languages h2{margin:10px 0 0;font-size:clamp(32px,6vw,54px);line-height:.95;letter-spacing:-2px;text-transform:uppercase;font-weight:950;color:var(--primary)}
 .section h2 span,.languages h2 span{color:var(--secondary)}
 .section p,.languages p{max-width:650px;margin:20px auto 0;color:var(--muted);font-size:17px;line-height:1.6}
-.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;max-width:700px;margin:30px auto 0}.pill{padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:999px;font-size:12px;font-weight:900;text-transform:uppercase;color:var(--primary)}.pill:nth-child(even){color:var(--secondary)}
+.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;max-width:700px;margin:30px auto 0}.pill{padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:999px;font-size:12px;font-weight:900;text-transform:uppercase;color:var(--primary);align-items:center;justify-content:center;display:flex;gap:10px}.pill:nth-child(even){color:var(--secondary)}
 
 .languages{padding:90px 20px;text-align:center;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .language-grid{max-width:900px;margin:35px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
@@ -179,7 +179,12 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <h2>سمِّ كل<br><span>عاصمة في العالم</span></h2>
 <p>اختبر نفسك في عاصمة كل دولة. العب منفردًا لتتعلمها كلها، أو تحدَّ لاعبين حقيقيين 1 ضد 1 لترى من يعرف عواصم أكثر.</p>
 <div class="pills">
-<span class="pill">الجغرافيا</span><span class="pill">العلوم</span><span class="pill">الدول</span><span class="pill">العواصم</span><span class="pill">الأعلام</span><span class="pill">الفلك</span><span class="pill">الكيمياء</span><span class="pill">معلومات عامة</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/countries.png" width="25px" alt="south africa flag"/>الدول</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/capitals.png" width="25px" alt="togo flag"/>العواصم</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/flags_4.png" width="25px" alt="saint pierre and miquelon flag"/>الأعلام</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/jupiter.png" width="25px" alt="jupiter"/>الفلك</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/periodic_table.png" width="25px" alt="periodic table"/>الكيمياء</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/constellations.png" width="25px" alt="constellation"/>معلومات عامة</span>
 </div>
 </section>
 
@@ -410,6 +415,7 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
           </a>
         </li>
       </ul>
+    </div>
     <div class="site-footer__group">
       <h3 class="site-footer__title">About the app</h3>
       <ul class="site-footer__list">
