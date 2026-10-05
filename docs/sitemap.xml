@@ -347,6 +347,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/haiti"/>
   </url>
   <url>
+    <loc>https://clashofnerds.com/flags/luxembourg</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/luxembourg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/luxembourg"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/monaco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/monaco"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/monaco"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/andorra</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/andorra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/andorra"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/liechtenstein</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/liechtenstein"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/liechtenstein"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/indonesia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/indonesia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/indonesia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/thailand</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/thailand"/>
+  </url>
+  <url>
     <loc>https://clashofnerds.com/ar/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://clashofnerds.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://clashofnerds.com/de/"/>
