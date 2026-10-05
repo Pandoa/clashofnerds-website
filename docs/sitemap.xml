@@ -312,6 +312,41 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/nicaragua"/>
   </url>
   <url>
+    <loc>https://clashofnerds.com/flags/honduras</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/honduras"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/honduras"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/el-salvador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/el-salvador"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/el-salvador"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/guatemala</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/guatemala"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/guatemala"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/belize</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/belize"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/belize"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/jamaica</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/jamaica"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/jamaica"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/cuba</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/cuba"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/cuba"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/haiti</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/haiti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/haiti"/>
+  </url>
+  <url>
     <loc>https://clashofnerds.com/ar/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://clashofnerds.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://clashofnerds.com/de/"/>

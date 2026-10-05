@@ -196,13 +196,15 @@ def main():
                     if props["out_filename"] != "index.html"
                     else ""
                 )
+                
+                path = (template_dir[template] + "/") if template_dir[template] else ""
 
                 props["canonical"] = (
                     f'<link rel="canonical" '
-                    f'href="https://clashofnerds.com/{lang}/{output_name}">'
+                    f'href="https://clashofnerds.com/{lang}/{path}{output_name}">'
                     if len(lang) and lang != "en"
                     else f'<link rel="canonical" '
-                         f'href="https://clashofnerds.com/{output_name}">'
+                         f'href="https://clashofnerds.com/{path}{output_name}">'
                 )
 
                 props["langcode"] = lang
@@ -210,12 +212,12 @@ def main():
                 props["xlangs"] = "\n".join(
                     [
                         f'<link rel="alternate" hreflang="x-default" '
-                        f'href="https://clashofnerds.com/{output_name}">',
+                        f'href="https://clashofnerds.com/{path}{output_name}">',
                         f'<link rel="alternate" hreflang="en" '
-                        f'href="https://clashofnerds.com/{output_name}">',
+                        f'href="https://clashofnerds.com/{path}{output_name}">',
                         *[
                             f'<link rel="alternate" hreflang="{other_lang}" '
-                            f'href="https://clashofnerds.com/{other_lang}/{output_name}">'
+                            f'href="https://clashofnerds.com/{other_lang}/{path}{output_name}">'
                             for other_lang in languages.keys()
                             if other_lang
                         ],
@@ -226,9 +228,9 @@ def main():
                 props["langSites"] = lang_pages
 
                 props["url"] = (
-                    f"https://clashofnerds.com/{lang}/{output_name}"
+                    f"https://clashofnerds.com/{lang}/{path}{output_name}"
                     if len(lang) and lang != "en"
-                    else f"https://clashofnerds.com/{output_name}"
+                    else f"https://clashofnerds.com/{path}{output_name}"
                 )
 
                 props["badge_lang"] = (
