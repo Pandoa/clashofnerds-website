@@ -1,5 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://clashofnerds.com/flags/kenya</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/kenya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/kenya"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/japan</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/japan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/japan"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/brazil</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/brazil"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/brazil"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/south-africa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/south-africa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/south-africa"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/germany</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/germany"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/germany"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/france</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/france"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/france"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/italy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/italy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/italy"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/spain</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/spain"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/spain"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/united-kingdom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/united-kingdom"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/united-kingdom"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/united-states</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/united-states"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/united-states"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/canada</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/canada"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/canada"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/australia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/australia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/australia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/switzerland</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/switzerland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/switzerland"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/netherlands</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/netherlands"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/netherlands"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/portugal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/portugal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/portugal"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/mexico</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/mexico"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/mexico"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/russia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/russia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/russia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/india</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/india"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/india"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/south-korea</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/south-korea"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/south-korea"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/turkey</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/turkey"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/turkey"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/greece</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/greece"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/greece"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/poland</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/poland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/poland"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/ukraine</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/ukraine"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/ukraine"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/sweden</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/sweden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/sweden"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/norway</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/norway"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/norway"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/finland</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/finland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/finland"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/denmark</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/denmark"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/denmark"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/iceland</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/iceland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/iceland"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/ireland</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/ireland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/ireland"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/belgium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/belgium"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/belgium"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/austria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/austria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/austria"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/hungary</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/hungary"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/hungary"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/romania</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/romania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/romania"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/bulgaria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/bulgaria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/bulgaria"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/croatia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/croatia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/croatia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/serbia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/serbia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/serbia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/slovenia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/slovenia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/slovenia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/slovakia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/slovakia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/slovakia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/czechia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/czechia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/czechia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/estonia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/estonia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/estonia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/latvia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/latvia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/latvia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/lithuania</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/lithuania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/lithuania"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/belarus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/belarus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/belarus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/moldova</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/moldova"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/moldova"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/georgia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/georgia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/georgia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/armenia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/armenia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/armenia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/azerbaijan</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/azerbaijan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/azerbaijan"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/kazakhstan</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/kazakhstan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/kazakhstan"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/kyrgyzstan</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/kyrgyzstan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/kyrgyzstan"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/chile</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/chile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/chile"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/peru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/peru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/peru"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/colombia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/colombia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/colombia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/venezuela</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/venezuela"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/venezuela"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/ecuador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/ecuador"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/ecuador"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/bolivia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/bolivia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/bolivia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/paraguay</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/paraguay"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/paraguay"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/uruguay</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/uruguay"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/uruguay"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/guyana</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/guyana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/guyana"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/suriname</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/suriname"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/suriname"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/panama</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/panama"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/panama"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/costa-rica</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/costa-rica"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/costa-rica"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/flags/nicaragua</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/nicaragua"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/nicaragua"/>
+  </url>
   <url>
     <loc>https://clashofnerds.com/ar/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://clashofnerds.com/ar/"/>
