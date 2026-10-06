@@ -2,6 +2,7 @@ import os
 import sys
 import json
 from pathlib import Path
+from collections import Counter
 
 LANGUAGE_TO_GOOGLE_PLAY_BADGE = {
     "af": "Afrikaans",
@@ -151,7 +152,12 @@ def get_all_flags(all_props: list[dict], props: dict):
     global log
     if log:
         log = False
-        print([d["countryName"] for d in data])
+        countries = [d["countryName"] for d in data]
+        counts = Counter(countries)
+        duplicates = {country: count for country, count in counts.items() if count > 1}
+        print(sorted(countries))
+        if duplicates:
+            print("Duplicates:", duplicates)
 
     return '<div class="flag-grid">' + "\n".join([f"""<a class="flag-card"
             href="https://clashofnerds.com/{lang_path}flags/{Path(d["out_filename"]).stem}"
