@@ -126,7 +126,65 @@ app_store_locale_map = {
 
 template_dir = {
     "index": "",
+    "flag": "flags",
     "flags": "flags",
+}
+
+
+def get_flag_count(all_props: list[dict], props: dict):
+    lang = props["lang"]
+
+    with open(os.path.join("lang", "flag", f"{lang}.json"), encoding="utf-8") as f:
+        data = json.load(f)
+
+    return str(len(data))
+
+log = True
+def get_all_flags(all_props: list[dict], props: dict):
+    lang = props["lang"]
+    
+    lang_path = lang + "/" if lang != "en" else ""
+
+    with open(os.path.join("lang", "flag", f"{lang}.json"), encoding="utf-8") as f:
+        data = sorted(json.load(f), key=lambda d: d["out_filename"])
+    
+    global log
+    if log:
+        log = False
+        print([d["countryName"] for d in data])
+
+    return '<div class="flag-grid">' + "\n".join([f"""<a class="flag-card"
+            href="https://clashofnerds.com/{lang_path}flags/{Path(d["out_filename"]).stem}"
+            data-name="{d['countryName']}"
+            data-code="{d["countryCode"]}"
+            data-letter="{d["countryName"][0]}"
+            data-search="{d["capitalCity"]} {d["countryNameLocal"]} {d["countryContinent"].replace('/', ' ')}">
+           <img src="{d["flagImageUrl"]}" alt="Flag of {d["countryName"]}"  loading="lazy">
+           <span class="flag-card__text">
+             <span class="flag-card__name">{d['countryName']}</span>
+             <span class="flag-card__meta">{d['countryCode']} · {d["countryContinent"]}</span>
+           </span>
+         </a>
+""" for d in data]) + "</div>"
+
+def get_continent_count(all_props: list[dict], props: dict):
+    lang = props["lang"]
+
+    with open(os.path.join("lang", "flag", f"{lang}.json"), encoding="utf-8") as f:
+        data = sorted(json.load(f), key=lambda d: d["out_filename"])
+
+    continents = set()
+    for d in data:
+        for c in d["countryContinent"].split("/"):
+            continents.add(c)
+    
+    return str(len(continents))
+
+
+computed_keys = {
+    "flagSections": get_all_flags,
+    "continentCount": get_continent_count,
+    "flagsCount": get_flag_count,
 }
 
 
@@ -196,7 +254,7 @@ def main():
                     if props["out_filename"] != "index.html"
                     else ""
                 )
-                
+
                 path = (template_dir[template] + "/") if template_dir[template] else ""
 
                 props["canonical"] = (
@@ -204,7 +262,7 @@ def main():
                     f'href="https://clashofnerds.com/{lang}/{path}{output_name}">'
                     if len(lang) and lang != "en"
                     else f'<link rel="canonical" '
-                         f'href="https://clashofnerds.com/{path}{output_name}">'
+                    f'href="https://clashofnerds.com/{path}{output_name}">'
                 )
 
                 props["langcode"] = lang
@@ -233,23 +291,25 @@ def main():
                     else f"https://clashofnerds.com/{path}{output_name}"
                 )
 
-                props["badge_lang"] = (
-                    LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang)
-                    or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
-                        lang.split("-")[0],
-                        "English",
-                    )
+                props["badge_lang"] = LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
+                    lang
+                ) or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(
+                    lang.split("-")[0],
+                    "English",
                 )
 
                 props["appstore_lang"] = app_store_locale_map[lang]
 
                 for key, value in props.items():
+                    if key in computed_keys:
+                        value = computed_keys[key](all_props=all_props, props=props)
+
                     lang_template = lang_template.replace(
                         "{{" + key + "}}",
                         value or "",
                     )
 
-                out_dir = f'{root}/{template_dir[template]}'
+                out_dir = f"{root}/{template_dir[template]}"
                 os.makedirs(out_dir, exist_ok=True)
 
                 lang_template = lang_template.replace(
@@ -315,11 +375,7 @@ def main():
             for lang, props in pages_for_filename.items():
                 prefix = f"/{lang}" if lang else ""
 
-                template_prefix_url = (
-                    f"/{template_prefix}"
-                    if template_prefix
-                    else ""
-                )
+                template_prefix_url = f"/{template_prefix}" if template_prefix else ""
 
                 name = (
                     ""
@@ -335,17 +391,10 @@ def main():
                     else f"{base_url}{prefix}{template_prefix_url}/"
                 )
 
-                sitemap += (
-                    "  <url>\n"
-                    f"    <loc>{url}</loc>\n"
-                )
+                sitemap += "  <url>\n" f"    <loc>{url}</loc>\n"
 
                 for other_lang, other_props in pages_for_filename.items():
-                    other_prefix = (
-                        f"/{other_lang}"
-                        if other_lang
-                        else ""
-                    )
+                    other_prefix = f"/{other_lang}" if other_lang else ""
 
                     other_name = (
                         ""
@@ -354,11 +403,9 @@ def main():
                     )
 
                     other_url = (
-                        f"{base_url}{other_prefix}"
-                        f"{template_prefix_url}/{other_name}"
+                        f"{base_url}{other_prefix}" f"{template_prefix_url}/{other_name}"
                         if other_name
-                        else f"{base_url}{other_prefix}"
-                        f"{template_prefix_url}/"
+                        else f"{base_url}{other_prefix}" f"{template_prefix_url}/"
                     )
 
                     sitemap += (

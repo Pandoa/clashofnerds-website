@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{flagPageTitle}}</title>
-<meta name="description" content="{{flagMetaDescription}}">
-<meta name="keywords" content="{{flagMetaKeywords}}">
+<title>{{flagsHubTitle}}</title>
+<meta name="description" content="{{flagsHubMetaDescription}}">
+<meta name="keywords" content="{{flagsHubMetaKeywords}}">
 <meta property="og:site_name" content="Clash of Nerds">
-<meta property="og:title" content="{{flagPageTitle}}">
-<meta property="og:description" content="{{flagMetaDescription}}">
-<meta property="og:type" content="article">
+<meta property="og:title" content="{{flagsHubTitle}}">
+<meta property="og:description" content="{{flagsHubMetaDescription}}">
+<meta property="og:type" content="website">
 <meta property="og:url" content="{{url}}">
-<meta property="og:image" content="{{flagImageUrl}}">
-<meta name="twitter:title" content="{{flagPageTitle}}">
-<meta name="twitter:description" content="{{flagMetaDescription}}">
+<meta property="og:image" content="https://clashofnerds.com/og/flags-{{lang}}.jpg">
+<meta name="twitter:title" content="{{flagsHubTitle}}">
+<meta name="twitter:description" content="{{flagsHubMetaDescription}}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{flagImageUrl}}">
+<meta name="twitter:image" content="https://clashofnerds.com/og/flags-{{lang}}.jpg">
 <link rel="icon" type="image/png" href="https://clashofnerds.com/favicon.png">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://clashofnerds.com/sitemap.xml">
 <meta name="apple-itunes-app" content="app-id=6803526268">
@@ -25,16 +25,24 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{flagPageTitle}}",
-  "description": "{{flagMetaDescription}}",
-  "image": "{{flagImageUrl}}",
+  "@type": "CollectionPage",
+  "name": "{{flagsHubTitle}}",
+  "description": "{{flagsHubMetaDescription}}",
   "url": "{{url}}",
-  "author": { "@type": "Organization", "name": "Clash of Nerds" },
-  "publisher": {
-    "@type": "Organization",
+  "inLanguage": "{{lang}}",
+  "isPartOf": {
+    "@type": "WebSite",
     "name": "Clash of Nerds",
-    "logo": { "@type": "ImageObject", "url": "https://clashofnerds.com/logo.png" }
+    "url": "https://clashofnerds.com/"
+  },
+  "about": { "@type": "Thing", "name": "Flags of the world" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{countryCount}},
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+      {{itemListJson}}
+    ]
   }
 }
 </script>
@@ -43,8 +51,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Flags", "item": "https://clashofnerds.com/{{lang}}/flags/" },
-    { "@type": "ListItem", "position": 2, "name": "Flag of {{countryName}}", "item": "{{url}}" }
+    { "@type": "ListItem", "position": 1, "name": "{{homeLabel}}", "item": "https://clashofnerds.com/{{lang}}/" },
+    { "@type": "ListItem", "position": 2, "name": "{{flagsLabel}}", "item": "{{url}}" }
   ]
 }
 </script>
@@ -55,18 +63,18 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does the flag of {{countryName}} look like?",
-      "acceptedAnswer": { "@type": "Answer", "text": "{{flagQuickAnswer}}" }
+      "name": "{{flagsFaqQ1}}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{flagsFaqA1}}" }
     },
     {
       "@type": "Question",
-      "name": "When was the flag of {{countryName}} adopted?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The flag of {{countryName}} was adopted on {{adoptedDate}}." }
+      "name": "{{flagsFaqQ2}}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{flagsFaqA2}}" }
     },
     {
       "@type": "Question",
-      "name": "What do the colors of the {{countryName}} flag mean?",
-      "acceptedAnswer": { "@type": "Answer", "text": "{{colorMeaningSummary}}" }
+      "name": "{{flagsFaqQ3}}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{flagsFaqA3}}" }
     }
   ]
 }
@@ -84,43 +92,64 @@ nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justif
 .nav-links a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
 .nav-links a:hover{color:var(--primary)}
 
-.breadcrumbs{max-width:880px;margin:0 auto;padding:18px 24px 0;font-size:12px;color:var(--muted);font-weight:700}
+.breadcrumbs{max-width:1100px;margin:0 auto;padding:18px 24px 0;font-size:12px;color:var(--muted);font-weight:700}
 .breadcrumbs a{color:var(--muted);text-decoration:none}
 .breadcrumbs a:hover{color:var(--primary)}
 .breadcrumbs span.sep{margin:0 6px;opacity:.5}
 
-main{max-width:880px;margin:0 auto;padding:20px 24px 80px}
+main{max-width:1100px;margin:0 auto;padding:10px 24px 80px}
 
-.flag-header{text-align:center;padding:30px 0 10px}
-.flag-header h1{margin:0 0 6px;font-size:clamp(32px,6vw,52px);line-height:1;letter-spacing:-2px;font-weight:950;text-transform:uppercase;color:var(--primary)}
-.flag-header h1 span{color:var(--secondary);display:block;font-size:.55em;letter-spacing:-1px;margin-top:8px}
-.flag-header .subtitle{margin:14px auto 0;max-width:600px;color:var(--muted);font-size:17px}
+/* ---------- header ---------- */
+.hub-header{text-align:center;padding:34px 0 0}
+.hub-header h1{margin:0;font-size:clamp(32px,6vw,54px);line-height:1;letter-spacing:-2px;font-weight:950;text-transform:uppercase;color:var(--primary)}
+.hub-header h1 span{color:var(--secondary);display:block;font-size:.56em;letter-spacing:-1px;margin-top:8px}
+.hub-header p{margin:16px auto 0;max-width:640px;color:var(--muted);font-size:17px}
 
-.flag-figure{margin:34px auto 0;max-width:640px;text-align:center}
-.flag-figure img{width:100%;height:auto;border-radius:14px;border:1px solid var(--border);box-shadow:0 14px 40px rgba(15,18,38,.12);background:#fff}
-.flag-figure figcaption{margin-top:12px;font-size:13px;color:var(--muted);font-weight:600}
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:32px 0 0}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 12px;text-align:center}
+.stat b{display:block;font-size:clamp(22px,4vw,30px);font-weight:950;line-height:1;color:var(--primary);letter-spacing:-1px}
+.stat:nth-child(2) b{color:var(--secondary)}
+.stat span{display:block;margin-top:7px;font-size:10.5px;font-weight:950;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
 
-.quick-answer{background:var(--surface);border:1px solid var(--border);border-left:5px solid var(--primary);border-radius:14px;padding:20px 22px;margin:34px 0 0;font-size:16px}
-.quick-answer strong{color:var(--text)}
-.quick-answer p{margin:0}
+/* ---------- search + alphabet ---------- */
+.toolbar{position:sticky;top:70px;z-index:60;margin:26px -24px 0;padding:14px 24px 12px;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.search-box{position:relative;max-width:520px;margin:0 auto}
+.search-box input{width:100%;padding:14px 46px 14px 18px;border:1px solid var(--border);border-radius:999px;font-size:15px;font-weight:700;font-family:inherit;color:var(--text);background:#fff;outline:none;transition:border-color .15s,box-shadow .15s}
+.search-box input::placeholder{color:#9aa0b4;font-weight:600}
+.search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(28,176,245,.12)}
+.search-box svg{position:absolute;right:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted);pointer-events:none}
 
-.content h2{margin:52px 0 0;font-size:clamp(24px,4vw,32px);line-height:1.1;letter-spacing:-1px;text-transform:uppercase;font-weight:950;color:var(--primary)}
-.content h2 span{color:var(--secondary)}
-.content h3{margin:32px 0 0;font-size:15px;text-transform:uppercase;letter-spacing:1px;color:var(--secondary);font-weight:950}
-.content p{margin:14px 0 0;color:#2a2f4a;font-size:16px}
-.content ul{margin:14px 0 0;padding-left:20px;color:#2a2f4a;font-size:16px}
-.content li{margin:8px 0}
+.alpha{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin:14px 0 0}
+.alpha button{min-width:28px;height:28px;padding:0 7px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;border-radius:8px;font-family:inherit;font-size:12px;font-weight:950;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:background .15s,color .15s}
+.alpha button:hover{background:var(--surface);color:var(--primary)}
+.alpha button.is-active{background:var(--primary);color:#fff}
+.alpha button.is-empty{opacity:.25;pointer-events:none}
+.alpha button[data-letter="all"]{padding:0 12px}
 
-.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:24px 0 0}
-.fact{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
-.fact dt{font-size:11px;font-weight:950;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0}
-.fact dd{margin:6px 0 0;font-size:15px;font-weight:800;color:var(--text)}
+/* ---------- sections & grid ---------- */
+.flag-section{margin:44px 0 0;scroll-margin-top:180px}
+.flag-section h2{margin:0;display:flex;align-items:baseline;gap:10px;font-size:clamp(20px,3.4vw,28px);line-height:1.1;letter-spacing:-1px;text-transform:uppercase;font-weight:950;color:var(--primary)}
+.flag-section:nth-child(even) h2{color:var(--secondary)}
+.flag-section h2 em{font-style:normal;font-size:11px;font-weight:950;letter-spacing:1.4px;color:var(--muted)}
 
-.colors{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
-.color-chip{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--border);border-radius:999px;font-size:13px;font-weight:800;background:#fff}
-.color-chip .swatch{width:16px;height:16px;border-radius:50%;border:1px solid rgba(15,18,38,.15)}
+.flag-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px;margin-top:16px}
+.flag-card{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#fff;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);transition:border-color .15s,transform .15s,box-shadow .15s}
+.flag-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,18,38,.08)}
+.flag-card img{width:38px;height:26px;flex:0 0 auto;object-fit:cover;border-radius:4px;background:var(--surface);box-shadow:0 0 0 1px rgba(15,18,38,.08)}
+.flag-card__text{min-width:0}
+.flag-card__name{display:block;font-size:13.5px;font-weight:800;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.flag-card__meta{display:block;margin-top:2px;font-size:10.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
 
-.cta{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 24px;text-align:center;margin:56px 0 0}
+.is-hidden{display:none!important}
+
+.no-results{display:none;text-align:center;padding:60px 20px;color:var(--muted)}
+.no-results.is-visible{display:block}
+.no-results b{display:block;font-size:18px;font-weight:950;text-transform:uppercase;letter-spacing:-.5px;color:var(--text)}
+.no-results span{display:block;margin-top:6px;font-size:14px;font-weight:700}
+
+/* ---------- cta ---------- */
+.cta{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 24px;text-align:center;margin:64px 0 0}
 .cta .eyebrow{font-size:11px;font-weight:950;letter-spacing:2px;text-transform:uppercase;color:var(--primary)}
 .cta h2{margin:10px 0 0;font-size:clamp(24px,4.5vw,34px);line-height:1;letter-spacing:-1.5px;text-transform:uppercase;font-weight:950;color:var(--primary)}
 .cta h2 span{color:var(--secondary)}
@@ -130,16 +159,15 @@ main{max-width:880px;margin:0 auto;padding:20px 24px 80px}
 .badge-container a:hover{transform:scale(1.04)}
 .badge-container img{height:48px;width:auto}
 
+/* ---------- related hubs ---------- */
 .related{margin:64px 0 0}
 .related h2{margin:0;font-size:22px;line-height:1.1;letter-spacing:-.5px;text-transform:uppercase;font-weight:950;color:var(--primary)}
-.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:18px}
-.related-grid a{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#fff;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);font-size:14px;font-weight:800;transition:border-color .15s,transform .15s}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:18px}
+.related-grid a{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);font-size:14px;font-weight:800;transition:border-color .15s,transform .15s}
 .related-grid a:hover{border-color:var(--primary);transform:translateY(-2px)}
-.related-grid img{width:26px;height:18px;object-fit:cover;border-radius:3px;box-shadow:0 0 0 1px rgba(15,18,38,.08)}
+.related-grid a i{font-style:normal;font-size:19px;line-height:1}
 
-.hub-link{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:12px 18px;background:var(--primary);color:#fff;text-decoration:none;border-radius:999px;font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:1px}
-.hub-link:hover{background:var(--secondary)}
-
+/* ---------- footer ---------- */
 footer{padding:50px 20px 35px;border-top:1px solid var(--border);background:var(--surface);color:var(--muted);font-size:12px;text-align:center}
 .site-footer__inner{max-width:1000px;margin:0 auto}
 .site-footer__group{margin:0 0 26px}
@@ -151,10 +179,9 @@ footer{padding:50px 20px 35px;border-top:1px solid var(--border);background:var(
 .site-footer__meta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding-top:20px;border-top:1px solid var(--border);font-size:11px;font-weight:700}
 .site-footer__meta a{color:var(--muted);text-decoration:none}
 .site-footer__meta a:hover{color:var(--primary);text-decoration:underline}
-
-.site-lang {display: flex;align-items: center;justify-content: center; margin-left: 3px; margin-right: 3px}
-.site-lang > a {display: flex;align-items: center;justify-content: center;}
-.site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;margin-right: 4px;}
+.site-lang{display:flex;align-items:center;justify-content:center;margin-left:3px;margin-right:3px}
+.site-lang>a{display:flex;align-items:center;justify-content:center}
+.site-lang>a>img{border-radius:6px;height:20px;border:1px solid #666;margin-right:4px}
 
 @media(max-width:650px){
 nav{padding:0 16px}
@@ -162,9 +189,18 @@ nav{padding:0 16px}
 .logo img{width:31px;height:31px}
 .nav-links{gap:16px}
 .nav-links a{font-size:10px}
-.facts{grid-template-columns:1fr}
-main{padding:20px 18px 60px}
+main{padding:10px 18px 60px}
+.breadcrumbs{padding:16px 18px 0}
+.toolbar{margin:22px -18px 0;padding:12px 18px 10px;top:70px}
+.stats{grid-template-columns:1fr;gap:8px}
+.stat{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;text-align:left}
+.stat b{font-size:22px}
+.stat span{margin-top:0}
+.flag-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.flag-card{padding:8px 10px;gap:9px}
+.flag-card img{width:32px;height:22px}
 .cta{padding:28px 18px;border-radius:16px}
+.alpha button{min-width:25px;height:25px;font-size:11px}
 }
 </style>
 </head>
@@ -184,177 +220,109 @@ main{padding:20px 18px 60px}
 </nav>
 
 <div class="breadcrumbs" aria-label="Breadcrumb">
-<a href="https://clashofnerds.com/{{lang}}/flags/">Flags</a><span class="sep">›</span>
-<span>{{countryName}}</span>
+<a href="https://clashofnerds.com/{{lang}}/">{{homeLabel}}</a><span class="sep">›</span>
+<span>{{flagsLabel}}</span>
 </div>
 
 <main>
 
-<header class="flag-header">
-<h1>Flag of {{countryName}}<span>{{countryNameLocal}}</span></h1>
-<p class="subtitle">{{flagSubtitle}}</p>
+<header class="hub-header">
+<h1>{{flagsHubH1}}<span>{{flagsHubH1Sub}}</span></h1>
+<p>{{flagsHubSubtitle}}</p>
 </header>
 
-<figure class="flag-figure">
-<img src="{{flagImageUrl}}" alt="Flag of {{countryName}}" width="1200" height="800" loading="eager">
-<figcaption>{{flagCaption}}</figcaption>
-</figure>
-
-<div class="quick-answer">
-<p><strong>Quick answer:</strong> {{flagQuickAnswer}}</p>
+<div class="stats">
+<div class="stat"><b>{{countryCount}}</b><span>{{statCountriesLabel}}</span></div>
+<div class="stat"><b>{{continentCount}}</b><span>{{statContinentsLabel}}</span></div>
+<div class="stat"><b>{{flagsCount}}</b><span>{{statFlagsLabel}}</span></div>
 </div>
 
-<div class="content">
-
-<h2>What the flag <span>looks like</span></h2>
-<p>{{flagDescription}}</p>
-
-<div class="colors">
-{{flagColors}}
+<!-- ============ SEARCH + ALPHABET ============ -->
+<div class="toolbar">
+<div class="search-box">
+<label for="flagSearch" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{searchLabel}}</label>
+<input id="flagSearch" type="search" autocomplete="off" spellcheck="false"
+       placeholder="{{searchPlaceholder}}"
+       aria-controls="flagSections">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+<circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path>
+</svg>
 </div>
 
-<h2>Colors and <span>meaning</span></h2>
-<p>{{colorMeaningSummary}}</p>
-{{colorMeaningDetailed}}
-
-<h2>History and <span>adoption</span></h2>
-<p>{{flagHistory}}</p>
-
-<h2>Key <span>facts</span></h2>
-<dl class="facts">
-<div class="fact"><dt>Adopted</dt><dd>{{adoptedDate}}</dd></div>
-<div class="fact"><dt>Proportion</dt><dd>{{flagProportion}}</dd></div>
-<div class="fact"><dt>Designer</dt><dd>{{flagDesigner}}</dd></div>
-<div class="fact"><dt>Capital</dt><dd>{{capitalCity}}</dd></div>
-<div class="fact"><dt>Country code</dt><dd>{{countryCode}}</dd></div>
-<div class="fact"><dt>Similar flags</dt><dd>{{similarFlags}}</dd></div>
-</dl>
-
-{{flagVariants}}
-
-<h2>Frequently asked <span>questions</span></h2>
-
-<h3>What does the flag of {{countryName}} look like?</h3>
-<p>{{flagQuickAnswer}}</p>
-
-<h3>When was the flag of {{countryName}} adopted?</h3>
-<p>The current flag of {{countryName}} was officially adopted on {{adoptedDate}}.</p>
-
-<h3>What do the colors mean?</h3>
-<p>{{colorMeaningSummary}}</p>
-
-<h3>Which flags look similar to the {{countryName}} flag?</h3>
-<p>{{similarFlagsAnswer}}</p>
-
+<div class="alpha" role="group" aria-label="{{alphabetLabel}}">
+<button type="button" data-letter="all" class="is-active">{{alphaAllLabel}}</button>
+<button type="button" data-letter="A">A</button>
+<button type="button" data-letter="B">B</button>
+<button type="button" data-letter="C">C</button>
+<button type="button" data-letter="D">D</button>
+<button type="button" data-letter="E">E</button>
+<button type="button" data-letter="F">F</button>
+<button type="button" data-letter="G">G</button>
+<button type="button" data-letter="H">H</button>
+<button type="button" data-letter="I">I</button>
+<button type="button" data-letter="J">J</button>
+<button type="button" data-letter="K">K</button>
+<button type="button" data-letter="L">L</button>
+<button type="button" data-letter="M">M</button>
+<button type="button" data-letter="N">N</button>
+<button type="button" data-letter="O">O</button>
+<button type="button" data-letter="P">P</button>
+<button type="button" data-letter="Q">Q</button>
+<button type="button" data-letter="R">R</button>
+<button type="button" data-letter="S">S</button>
+<button type="button" data-letter="T">T</button>
+<button type="button" data-letter="U">U</button>
+<button type="button" data-letter="V">V</button>
+<button type="button" data-letter="W">W</button>
+<button type="button" data-letter="X">X</button>
+<button type="button" data-letter="Y">Y</button>
+<button type="button" data-letter="Z">Z</button>
+</div>
 </div>
 
+<div id="flagSections">
+{{flagSections}}
+</div>
+
+<div class="no-results" id="noResults" role="status" aria-live="polite">
+<b>{{noResultsTitle}}</b>
+<span>{{noResultsText}}</span>
+</div>
+
+<!-- ============ CTA ============ -->
 <section class="cta">
-<div class="eyebrow">Think you know all 195?</div>
-<h2>Test yourself in <span>Clash of Nerds</span></h2>
-<p>Guess flags, capitals, constellations, elements and more. 1,000+ questions, 20 languages, free to play.</p>
+<div class="eyebrow">{{ctaEyebrow}}</div>
+<h2>{{ctaTitle}} <span>{{ctaTitleAccent}}</span></h2>
+<p>{{ctaText}}</p>
 <div class="badge-container">
 <a href="https://apps.apple.com/{{appstore_lang}}/app/clash-of-nerds-brain-battles/id6803526268"
-   onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'app_store',location:'flag_page'});">
+   onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'app_store',location:'flags_hub'});">
 <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/{{lang}}" alt="{{appStoreBadgeAlt}}">
 </a>
 <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
-   onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'google_play',location:'flag_page'});">
+   onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'google_play',location:'flags_hub'});">
 <img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_{{badge_lang}}.svg" alt="Get it on Google Play">
 </a>
 </div>
 </section>
 
+<!-- ============ RELATED HUBS ============ -->
 <section class="related">
-<h2>Related flags</h2>
+<h2>{{relatedHubsTitle}}</h2>
 <div class="related-grid">
-{{relatedFlags}}
+{{relatedHubs}}
+<!--
+<a href="https://clashofnerds.com/{{lang}}/capitals/"><i>🏛️</i> {{capitalsHubLabel}}</a>
+<a href="https://clashofnerds.com/{{lang}}/constellations/"><i>✨</i> {{constellationsHubLabel}}</a>
+<a href="https://clashofnerds.com/{{lang}}/elements/"><i>⚗️</i> {{elementsHubLabel}}</a>
+<a href="https://clashofnerds.com/{{lang}}/flags/quiz/"><i>🎯</i> {{flagQuizLabel}}</a>
+-->
 </div>
-<a class="hub-link" href="https://clashofnerds.com/{{lang}}/flags/">Browse all 195 flags →</a>
 </section>
 
 </main>
 
 <footer class="site-footer">
-    <style>
-    .site-footer{
-      padding:50px 20px 35px;
-      border-top:1px solid var(--border);
-      background:var(--surface);
-      color:var(--muted);
-      font-size:12px;
-      text-align:center;
-    }
-    .site-footer__inner{max-width:1000px;margin:0 auto}
-    .site-footer__group{margin:0 0 26px}
-    .site-footer__title{
-      margin:0 0 12px;
-      font-size:11px;
-      font-weight:950;
-      letter-spacing:2px;
-      text-transform:uppercase;
-      color:var(--primary);
-    }
-    .site-footer__group:nth-of-type(even) .site-footer__title{color:var(--secondary)}
-    .site-footer__list{
-      list-style:none;
-      margin:0;
-      padding:0;
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:6px 16px;
-      line-height:1.9;
-    }
-    .site-footer__list a{
-      color:var(--muted);
-      text-decoration:none;
-      font-size:12px;
-      font-weight:700;
-      transition:color .15s;
-    }
-    .site-footer__list a:hover,
-    .site-footer__list a:focus-visible{
-      color:var(--primary);
-      text-decoration:underline;
-      text-underline-offset:3px;
-    }
-    .site-footer__list .site-lang{
-      display:inline-flex;
-      align-items:center;
-      margin:0;
-    }
-    .site-footer__list .site-lang > a > img{
-      border-radius:6px;
-      height:20px;
-      border:1px solid #666;
-      margin-right:5px;
-    }
-    .site-footer__meta{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      align-items:center;
-      gap:8px;
-      padding-top:20px;
-      border-top:1px solid var(--border);
-      font-size:11px;
-      font-weight:700;
-    }
-    .site-footer__meta a{
-      color:var(--muted);
-      text-decoration:none;
-    }
-    .site-footer__meta a:hover,
-    .site-footer__meta a:focus-visible{
-      color:var(--primary);
-      text-decoration:underline;
-    }
-    @media (max-width:650px){
-      .site-footer{padding:40px 16px 25px}
-      .site-footer__group{margin-bottom:22px}
-      .site-footer__list{gap:4px 12px}
-    }
-  </style>
 <div class="site-footer__inner">
 <div class="site-footer__group">
 <h3 class="site-footer__title">Explore</h3>
@@ -371,6 +339,108 @@ main{padding:20px 18px 60px}
 </div>
 </div>
 </footer>
+
+<script>
+(function () {
+  var input    = document.getElementById('flagSearch');
+  var cards    = Array.prototype.slice.call(document.querySelectorAll('.flag-card'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.flag-section'));
+  var empty    = document.getElementById('noResults');
+  var letterBtns = Array.prototype.slice.call(document.querySelectorAll('.alpha button[data-letter]'));
+  var activeLetter = 'all';
+
+  function norm(s) {
+    return (s || '')
+      .toString()
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\u0400-\u04ff\u4e00-\u9fff ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  /* pre-compute search haystacks + first letters */
+  cards.forEach(function (card) {
+    var name  = card.getAttribute('data-name') || '';
+    var code  = card.getAttribute('data-code') || '';
+    var extra = card.getAttribute('data-search') || '';
+    card._hay    = norm(name + ' ' + code + ' ' + extra);
+    card._letter = (card.getAttribute('data-letter') || name.charAt(0) || '').toUpperCase();
+  });
+
+  /* disable letters that have no entries in this language */
+  letterBtns.forEach(function (btn) {
+    var L = btn.getAttribute('data-letter');
+    if (L === 'all') return;
+    var has = cards.some(function (c) { return c._letter === L; });
+    if (!has) btn.classList.add('is-empty');
+  });
+
+  function apply() {
+    var q = norm(input.value);
+    var visible = 0;
+
+    cards.forEach(function (card) {
+      var okLetter = activeLetter === 'all' || card._letter === activeLetter;
+      var okQuery  = !q || card._hay.indexOf(q) !== -1;
+      var show     = okLetter && okQuery;
+      card.classList.toggle('is-hidden', !show);
+      if (show) visible++;
+    });
+
+    sections.forEach(function (sec) {
+      var any = sec.querySelector('.flag-card:not(.is-hidden)');
+      sec.classList.toggle('is-hidden', !any);
+    });
+
+    if (empty) empty.classList.toggle('is-visible', visible === 0);
+  }
+
+  var t;
+  input.addEventListener('input', function () {
+    clearTimeout(t);
+    t = setTimeout(apply, 90);
+  });
+
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      input.value = '';
+      activeLetter = 'all';
+      letterBtns.forEach(function (b) {
+        b.classList.toggle('is-active', b.getAttribute('data-letter') === 'all');
+      });
+      apply();
+    }
+  });
+
+  letterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeLetter = btn.getAttribute('data-letter');
+      letterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      apply();
+      var toolbar = document.querySelector('.toolbar');
+      if (toolbar) {
+        var y = toolbar.getBoundingClientRect().bottom + window.pageYOffset - 8;
+        if (window.pageYOffset > y) window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });
+
+  /* deep-link: /flags/#asia opens that continent */
+  if (location.hash) {
+    var target = document.querySelector(location.hash);
+    if (target && target.classList.contains('flag-section')) {
+      setTimeout(function () {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 120);
+    }
+  }
+
+  apply();
+})();
+</script>
 
 <script>
   (function () {
