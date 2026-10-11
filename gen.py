@@ -244,7 +244,8 @@ def main():
                 [
                     f'<li><a href="https://clashofnerds.com/'
                     f'{f"{lang}/" if lang else ""}'
-                    f'{props["out_filename"]}" target="_blank" '
+                    f'{f"{template_dir[template]}/" if template_dir[template] else ""}'
+                    f'{props["out_filename"].split(".html")[0] if props["out_filename"] != "index.html" else ""}" target="_blank" '
                     f'rel="noopener">{props["title"]}</a></li>'
                     for props in all_props
                 ]
