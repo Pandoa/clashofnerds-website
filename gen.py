@@ -199,10 +199,31 @@ def get_all_constellations(all_props: list[dict], props: dict):
     global log_c
     if log_c:
         log_c = False
+
+        with open("./data/constellations.json", "r", encoding="utf-8") as f:
+            cons_data = json.load(f)  # [{"id": "equ", "name": "Equuleus", "stars": [...], "lines": [...]}, ...]
+
+        svg_ids  = {c["id"] for c in cons_data}
+        lang_ids = {d["constellationId"] for d in data}
+
+        missing_in_lang = sorted(svg_ids - lang_ids)   # has SVG, no page
+        missing_in_svg  = sorted(lang_ids - svg_ids)   # has page, no SVG
+        extra_pages     = [d["out_filename"] for d in data if d["constellationId"] in missing_in_svg]
+
+        if missing_in_lang:
+            print(f"[{lang}] Missing pages (SVG exists, no lang entry): {len(missing_in_lang)}")
+            print("  ", missing_in_lang)
+        if missing_in_svg:
+            print(f"[{lang}] Missing SVGs (lang entry exists, no SVG): {len(missing_in_svg)}")
+            print("  ids:", missing_in_svg)
+            print("  files:", extra_pages)
+
         names = [d["constellationName"] for d in data]
         duplicates = {n: c for n, c in Counter(names).items() if c > 1}
         if duplicates:
-            print("Duplicates:", duplicates)
+            print(f"[{lang}] Duplicate names:", duplicates)
+
+        print(f"[{lang}] lang entries: {len(lang_ids)}  |  SVGs available: {len(svg_ids)}")
 
     def card(d):
         name = d["constellationName"]
@@ -213,7 +234,7 @@ def get_all_constellations(all_props: list[dict], props: dict):
    data-code="{cid}"
    data-letter="{name[0].upper()}"
    data-search="{name} {cid} {d['brightestStar']} {d['constellationMeaning']}">
-  <img src="/constellations_svg/{cid}.svg" alt="Star chart of {name}" loading="lazy">
+  <img src="https://clashofnerds.com/constellations_svg/{cid}.svg" alt="Star chart of {name}" loading="lazy">
   <span class="constellation-card__text">
     <span class="constellation-card__name">{name}</span>
     <span class="constellation-card__meta">{cid.capitalize()} · {d['constellationMeaning']}</span>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="82 37 216 216" width="216" height="216" role="img" aria-label="Star chart of Mensa">
+<title>Mensa</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="82" y="37" width="216" height="216" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="180" y1="110" x2="150" y2="90"/><line x1="150" y1="90" x2="240" y2="100"/><line x1="240" y1="100" x2="270" y2="150"/><line x1="270" y1="150" x2="220" y2="200"/><line x1="220" y1="200" x2="170" y2="180"/><line x1="170" y1="180" x2="150" y2="90"/><line x1="180" y1="110" x2="110" y2="140"/></g>
+<g fill="url(#halo)"><circle cx="180" cy="110" r="12.48"/><circle cx="150" cy="90" r="12.48"/><circle cx="240" cy="100" r="12.48"/><circle cx="270" cy="150" r="12.48"/><circle cx="220" cy="200" r="12.48"/><circle cx="170" cy="180" r="12.48"/><circle cx="110" cy="140" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="180" cy="110" r="4.8"/><circle cx="150" cy="90" r="4.8"/><circle cx="240" cy="100" r="4.8"/><circle cx="270" cy="150" r="4.8"/><circle cx="220" cy="200" r="4.8"/><circle cx="170" cy="180" r="4.8"/><circle cx="110" cy="140" r="4.8"/></g>
+</svg>
