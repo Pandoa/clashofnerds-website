@@ -2,6 +2,451 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://clashofnerds.com/constellations/pisces</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/pisces"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/pisces"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/aries</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/aries"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/aries"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/taurus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/taurus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/taurus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/gemini</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/gemini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/gemini"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/cancer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/cancer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/cancer"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/leo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/leo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/leo"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/virgo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/virgo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/virgo"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/libra</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/libra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/libra"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/scorpius</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/scorpius"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/scorpius"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/sagittarius</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/sagittarius"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/sagittarius"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/capricornus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/capricornus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/capricornus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/aquarius</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/aquarius"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/aquarius"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/ophiuchus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/ophiuchus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/ophiuchus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/orion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/orion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/orion"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/ursa-major</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/ursa-major"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/ursa-major"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/cassiopeia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/cassiopeia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/cassiopeia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/cygnus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/cygnus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/cygnus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/lyra</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/lyra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/lyra"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/aquila</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/aquila"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/aquila"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/canis-major</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/canis-major"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/canis-major"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/canis-minor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/canis-minor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/canis-minor"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/perseus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/perseus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/perseus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/andromeda</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/andromeda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/andromeda"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/pegasus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/pegasus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/pegasus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/hercules</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/hercules"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/hercules"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/bootes</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/bootes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/bootes"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/ursa-minor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/ursa-minor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/ursa-minor"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/draco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/draco"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/draco"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/corona-borealis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/corona-borealis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/corona-borealis"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/cepheus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/cepheus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/cepheus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/auriga</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/auriga"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/auriga"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/cetus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/cetus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/cetus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/hydra</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/hydra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/hydra"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/crux</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/crux"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/crux"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/centaurus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/centaurus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/centaurus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/carina</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/carina"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/carina"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/vela</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/vela"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/vela"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/puppis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/puppis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/puppis"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/corvus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/corvus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/corvus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/crater</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/crater"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/crater"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/lupus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/lupus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/lupus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/monoceros</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/monoceros"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/monoceros"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/lepus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/lepus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/lepus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/canes-venatici</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/canes-venatici"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/canes-venatici"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/coma-berenices</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/coma-berenices"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/coma-berenices"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/eridanus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/eridanus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/eridanus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/delphinus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/delphinus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/delphinus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/sagitta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/sagitta"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/sagitta"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/vulpecula</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/vulpecula"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/vulpecula"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/triangulum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/triangulum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/triangulum"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/piscis-austrinus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/piscis-austrinus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/piscis-austrinus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/grus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/grus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/grus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/phoenix</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/phoenix"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/phoenix"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/tucana</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/tucana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/tucana"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/pavo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/pavo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/pavo"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/ara</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/ara"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/ara"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/corona-australis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/corona-australis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/corona-australis"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/norma</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/norma"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/norma"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/telescopium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/telescopium"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/telescopium"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/microscopium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/microscopium"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/microscopium"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/sculptor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/sculptor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/sculptor"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/fornax</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/fornax"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/fornax"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/caelum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/caelum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/caelum"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/horologium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/horologium"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/horologium"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/reticulum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/reticulum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/reticulum"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/dorado</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/dorado"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/dorado"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/hydrus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/hydrus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/hydrus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/volans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/volans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/volans"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/mensa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/mensa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/mensa"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/pictor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/pictor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/pictor"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/chamaeleon</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/chamaeleon"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/chamaeleon"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/apus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/apus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/apus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/triangulum-australe</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/triangulum-australe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/triangulum-australe"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/circinus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/circinus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/circinus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/musca</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/musca"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/musca"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/octans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/octans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/octans"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/indus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/indus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/indus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/antlia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/antlia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/antlia"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/camelopardalis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/camelopardalis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/camelopardalis"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/columba</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/columba"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/columba"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/equuleus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/equuleus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/equuleus"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/lacerta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/lacerta"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/lacerta"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/leo-minor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/leo-minor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/leo-minor"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/lynx</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/lynx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/lynx"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/pyxis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/pyxis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/pyxis"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/scutum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/scutum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/scutum"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/serpens</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/serpens"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/serpens"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/sextans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/sextans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/sextans"/>
+  </url>
+  <url>
+    <loc>https://clashofnerds.com/constellations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/constellations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/constellations/"/>
+  </url>
+  <url>
     <loc>https://clashofnerds.com/flags/kenya</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://clashofnerds.com/flags/kenya"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clashofnerds.com/flags/kenya"/>

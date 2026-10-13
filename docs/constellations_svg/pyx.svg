@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Pyxis">
+<title>Pyxis</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="356.49" y1="33.85" x2="250.43" y2="30"/><line x1="250.43" y1="30" x2="151.66" y2="95.59"/><line x1="151.66" y1="95.59" x2="112.28" y2="96.62"/><line x1="112.28" y1="96.62" x2="57.53" y2="293.65"/><line x1="57.53" y1="293.65" x2="30" y2="370"/><line x1="370" y1="137.05" x2="151.66" y2="95.59"/></g>
+<g fill="url(#halo)"><circle cx="356.49" cy="33.85" r="12.48"/><circle cx="250.43" cy="30" r="12.48"/><circle cx="151.66" cy="95.59" r="12.48"/><circle cx="112.28" cy="96.62" r="12.48"/><circle cx="57.53" cy="293.65" r="14.29"/><circle cx="30" cy="370" r="12.48"/><circle cx="370" cy="137.05" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="356.49" cy="33.85" r="4.8"/><circle cx="250.43" cy="30" r="4.8"/><circle cx="151.66" cy="95.59" r="4.8"/><circle cx="112.28" cy="96.62" r="4.8"/><circle cx="57.53" cy="293.65" r="5.5"/><circle cx="30" cy="370" r="4.8"/><circle cx="370" cy="137.05" r="4.8"/></g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of CoronaBorealis">
+<title>CoronaBorealis</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="61.95" y1="199.78" x2="30" y2="272.29"/><line x1="30" y1="272.29" x2="72.95" y2="349.2"/><line x1="72.95" y1="349.2" x2="123.43" y2="362.7"/><line x1="123.43" y1="362.7" x2="166.36" y2="370"/><line x1="166.36" y1="370" x2="216.44" y2="343.96"/><line x1="216.44" y1="343.96" x2="240.59" y2="248.3"/><line x1="240.59" y1="248.3" x2="370" y2="214.82"/><line x1="370" y1="214.82" x2="287.76" y2="34.69"/><line x1="287.76" y1="34.69" x2="176.62" y2="61.45"/><line x1="176.62" y1="61.45" x2="102.35" y2="30"/><line x1="102.35" y1="30" x2="61.95" y2="199.78"/></g>
+<g fill="url(#halo)"><circle cx="61.95" cy="199.78" r="12.48"/><circle cx="30" cy="272.29" r="12.48"/><circle cx="72.95" cy="349.2" r="12.48"/><circle cx="123.43" cy="362.7" r="12.48"/><circle cx="166.36" cy="370" r="12.48"/><circle cx="216.44" cy="343.96" r="12.48"/><circle cx="240.59" cy="248.3" r="12.48"/><circle cx="370" cy="214.82" r="12.48"/><circle cx="287.76" cy="34.69" r="12.48"/><circle cx="176.62" cy="61.45" r="12.48"/><circle cx="102.35" cy="30" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="61.95" cy="199.78" r="4.8"/><circle cx="30" cy="272.29" r="4.8"/><circle cx="72.95" cy="349.2" r="4.8"/><circle cx="123.43" cy="362.7" r="4.8"/><circle cx="166.36" cy="370" r="4.8"/><circle cx="216.44" cy="343.96" r="4.8"/><circle cx="240.59" cy="248.3" r="4.8"/><circle cx="370" cy="214.82" r="4.8"/><circle cx="287.76" cy="34.69" r="4.8"/><circle cx="176.62" cy="61.45" r="4.8"/><circle cx="102.35" cy="30" r="4.8"/></g>
+</svg>

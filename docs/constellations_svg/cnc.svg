@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Cancer">
+<title>Cancer</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="274.5" y1="30" x2="246.87" y2="156.65"/><line x1="246.87" y1="156.65" x2="258.2" y2="214.21"/><line x1="258.2" y1="214.21" x2="370" y2="323.59"/><line x1="30" y1="370" x2="258.2" y2="214.21"/></g>
+<g fill="url(#halo)"><circle cx="274.5" cy="30" r="12.48"/><circle cx="246.87" cy="156.65" r="12.48"/><circle cx="258.2" cy="214.21" r="12.48"/><circle cx="370" cy="323.59" r="12.48"/><circle cx="30" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="274.5" cy="30" r="4.8"/><circle cx="246.87" cy="156.65" r="4.8"/><circle cx="258.2" cy="214.21" r="4.8"/><circle cx="370" cy="323.59" r="4.8"/><circle cx="30" cy="370" r="4.8"/></g>
+</svg>

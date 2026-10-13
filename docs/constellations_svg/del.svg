@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Delphinus">
+<title>Delphinus</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="370" y1="30" x2="289.09" y2="104.05"/><line x1="289.09" y1="104.05" x2="139.62" y2="137.86"/><line x1="139.62" y1="137.86" x2="192.46" y2="45"/><line x1="192.46" y1="45" x2="370" y2="30"/><line x1="139.62" y1="137.86" x2="30" y2="370"/></g>
+<g fill="url(#halo)"><circle cx="370" cy="30" r="12.48"/><circle cx="289.09" cy="104.05" r="12.48"/><circle cx="139.62" cy="137.86" r="12.48"/><circle cx="192.46" cy="45" r="12.48"/><circle cx="30" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="370" cy="30" r="4.8"/><circle cx="289.09" cy="104.05" r="4.8"/><circle cx="139.62" cy="137.86" r="4.8"/><circle cx="192.46" cy="45" r="4.8"/><circle cx="30" cy="370" r="4.8"/></g>
+</svg>

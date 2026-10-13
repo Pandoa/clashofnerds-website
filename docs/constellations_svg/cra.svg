@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of CoronaAustralis">
+<title>CoronaAustralis</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="264.77" y1="32.87" x2="336.38" y2="30"/><line x1="336.38" y1="30" x2="364.81" y2="84.5"/><line x1="364.81" y1="84.5" x2="370" y2="177.53"/><line x1="370" y1="177.53" x2="354.36" y2="252.4"/><line x1="354.36" y1="252.4" x2="305.63" y2="355.92"/><line x1="305.63" y1="355.92" x2="30" y2="370"/></g>
+<g fill="url(#halo)"><circle cx="264.77" cy="32.87" r="12.48"/><circle cx="336.38" cy="30" r="12.48"/><circle cx="364.81" cy="84.5" r="12.48"/><circle cx="370" cy="177.53" r="12.48"/><circle cx="354.36" cy="252.4" r="12.48"/><circle cx="305.63" cy="355.92" r="12.48"/><circle cx="30" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="264.77" cy="32.87" r="4.8"/><circle cx="336.38" cy="30" r="4.8"/><circle cx="364.81" cy="84.5" r="4.8"/><circle cx="370" cy="177.53" r="4.8"/><circle cx="354.36" cy="252.4" r="4.8"/><circle cx="305.63" cy="355.92" r="4.8"/><circle cx="30" cy="370" r="4.8"/></g>
+</svg>

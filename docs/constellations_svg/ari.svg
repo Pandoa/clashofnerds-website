@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Aries">
+<title>Aries</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="257.21" y1="30" x2="238.59" y2="82.61"/><line x1="238.59" y1="82.61" x2="87" y2="227.6"/><line x1="87" y1="227.6" x2="34.64" y2="318.28"/><line x1="34.64" y1="318.28" x2="30" y2="370"/><line x1="370" y1="310.2" x2="304.44" y2="300.1"/><line x1="304.44" y1="300.1" x2="87" y2="227.6"/><line x1="356.32" y1="355.22" x2="304.44" y2="300.1"/><line x1="265.88" y1="97.86" x2="238.59" y2="82.61"/></g>
+<g fill="url(#halo)"><circle cx="257.21" cy="30" r="12.48"/><circle cx="238.59" cy="82.61" r="12.48"/><circle cx="87" cy="227.6" r="12.48"/><circle cx="34.64" cy="318.28" r="12.48"/><circle cx="30" cy="370" r="12.48"/><circle cx="370" cy="310.2" r="12.48"/><circle cx="304.44" cy="300.1" r="12.48"/><circle cx="356.32" cy="355.22" r="12.48"/><circle cx="265.88" cy="97.86" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="257.21" cy="30" r="4.8"/><circle cx="238.59" cy="82.61" r="4.8"/><circle cx="87" cy="227.6" r="4.8"/><circle cx="34.64" cy="318.28" r="4.8"/><circle cx="30" cy="370" r="4.8"/><circle cx="370" cy="310.2" r="4.8"/><circle cx="304.44" cy="300.1" r="4.8"/><circle cx="356.32" cy="355.22" r="4.8"/><circle cx="265.88" cy="97.86" r="4.8"/></g>
+</svg>

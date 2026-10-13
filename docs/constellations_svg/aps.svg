@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Apus">
+<title>Apus</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="30" y1="370" x2="302.89" y2="292.34"/><line x1="302.89" y1="292.34" x2="370" y2="30"/><line x1="370" y1="30" x2="341.58" y2="337.13"/><line x1="341.58" y1="337.13" x2="302.89" y2="292.34"/></g>
+<g fill="url(#halo)"><circle cx="30" cy="370" r="12.48"/><circle cx="302.89" cy="292.34" r="12.48"/><circle cx="370" cy="30" r="12.48"/><circle cx="341.58" cy="337.13" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="30" cy="370" r="4.8"/><circle cx="302.89" cy="292.34" r="4.8"/><circle cx="370" cy="30" r="4.8"/><circle cx="341.58" cy="337.13" r="4.8"/></g>
+</svg>

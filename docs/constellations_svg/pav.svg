@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Pavo">
+<title>Pavo</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="276.35" y1="30" x2="370" y2="211.47"/><line x1="370" y1="211.47" x2="306.1" y2="229.02"/><line x1="306.1" y1="229.02" x2="250.24" y2="228.52"/><line x1="250.24" y1="228.52" x2="276.35" y2="30"/><line x1="250.24" y1="228.52" x2="237.75" y2="370"/><line x1="237.75" y1="370" x2="118.27" y2="338.84"/><line x1="118.27" y1="338.84" x2="139.71" y2="250.68"/><line x1="139.71" y1="250.68" x2="250.24" y2="228.52"/><line x1="139.71" y1="250.68" x2="132.42" y2="144.61"/><line x1="132.42" y1="144.61" x2="87.76" y2="130.03"/><line x1="87.76" y1="130.03" x2="65.19" y2="175.73"/><line x1="65.19" y1="175.73" x2="30" y2="197.92"/><line x1="30" y1="197.92" x2="139.71" y2="250.68"/></g>
+<g fill="url(#halo)"><circle cx="276.35" cy="30" r="12.48"/><circle cx="370" cy="211.47" r="12.48"/><circle cx="306.1" cy="229.02" r="12.48"/><circle cx="250.24" cy="228.52" r="12.48"/><circle cx="237.75" cy="370" r="12.48"/><circle cx="118.27" cy="338.84" r="12.48"/><circle cx="139.71" cy="250.68" r="12.48"/><circle cx="132.42" cy="144.61" r="23.21"/><circle cx="87.76" cy="130.03" r="12.48"/><circle cx="65.19" cy="175.73" r="12.48"/><circle cx="30" cy="197.92" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="276.35" cy="30" r="4.8"/><circle cx="370" cy="211.47" r="4.8"/><circle cx="306.1" cy="229.02" r="4.8"/><circle cx="250.24" cy="228.52" r="4.8"/><circle cx="237.75" cy="370" r="4.8"/><circle cx="118.27" cy="338.84" r="4.8"/><circle cx="139.71" cy="250.68" r="4.8"/><circle cx="132.42" cy="144.61" r="8.93"/><circle cx="87.76" cy="130.03" r="4.8"/><circle cx="65.19" cy="175.73" r="4.8"/><circle cx="30" cy="197.92" r="4.8"/></g>
+</svg>

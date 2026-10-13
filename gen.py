@@ -129,6 +129,8 @@ template_dir = {
     "index": "",
     "flag": "flags",
     "flags": "flags",
+    "constellation": "constellations",
+    "constellations": "constellations",
 }
 
 
@@ -186,11 +188,51 @@ def get_continent_count(all_props: list[dict], props: dict):
     
     return str(len(continents))
 
+log_c = True
+def get_all_constellations(all_props: list[dict], props: dict):
+    lang = props["lang"]
+    lang_path = lang + "/" if lang != "en" else ""
+
+    with open(os.path.join("lang", "constellation", f"{lang}.json"), encoding="utf-8") as f:
+        data = sorted(json.load(f), key=lambda d: d["out_filename"])
+
+    global log_c
+    if log_c:
+        log_c = False
+        names = [d["constellationName"] for d in data]
+        duplicates = {n: c for n, c in Counter(names).items() if c > 1}
+        if duplicates:
+            print("Duplicates:", duplicates)
+
+    def card(d):
+        name = d["constellationName"]
+        cid  = d["constellationId"]
+        return f"""<a class="constellation-card"
+   href="https://clashofnerds.com/{lang_path}constellations/{Path(d['out_filename']).stem}"
+   data-name="{name}"
+   data-code="{cid}"
+   data-letter="{name[0].upper()}"
+   data-search="{name} {cid} {d['brightestStar']} {d['constellationMeaning']}">
+  <img src="/constellations_svg/{cid}.svg" alt="Star chart of {name}" loading="lazy">
+  <span class="constellation-card__text">
+    <span class="constellation-card__name">{name}</span>
+    <span class="constellation-card__meta">{cid.capitalize()} · {d['constellationMeaning']}</span>
+  </span>
+</a>"""
+
+    return (
+        '<section class="constellation-section" id="all">'
+        '<h2>All Constellations <em>' + str(len(data)) + '</em></h2>'
+        '<div class="constellation-grid">'
+        + "\n".join(card(d) for d in data)
+        + "</div></section>"
+    )
 
 computed_keys = {
     "flagSections": get_all_flags,
     "continentCount": get_continent_count,
     "flagsCount": get_flag_count,
+    "constellationSections": get_all_constellations
 }
 
 

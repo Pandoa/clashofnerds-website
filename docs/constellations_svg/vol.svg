@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Volans">
+<title>Volans</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="128.9" y1="370" x2="30" y2="259.27"/><line x1="30" y1="259.27" x2="54.17" y2="125.68"/><line x1="54.17" y1="125.68" x2="206.98" y2="160.36"/><line x1="206.98" y1="160.36" x2="260.23" y2="30"/><line x1="260.23" y1="30" x2="370" y2="43.63"/><line x1="370" y1="43.63" x2="242.52" y2="312.66"/><line x1="242.52" y1="312.66" x2="128.9" y2="370"/></g>
+<g fill="url(#halo)"><circle cx="128.9" cy="370" r="12.48"/><circle cx="30" cy="259.27" r="12.48"/><circle cx="54.17" cy="125.68" r="12.48"/><circle cx="206.98" cy="160.36" r="12.48"/><circle cx="260.23" cy="30" r="12.48"/><circle cx="370" cy="43.63" r="12.48"/><circle cx="242.52" cy="312.66" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="128.9" cy="370" r="4.8"/><circle cx="30" cy="259.27" r="4.8"/><circle cx="54.17" cy="125.68" r="4.8"/><circle cx="206.98" cy="160.36" r="4.8"/><circle cx="260.23" cy="30" r="4.8"/><circle cx="370" cy="43.63" r="4.8"/><circle cx="242.52" cy="312.66" r="4.8"/></g>
+</svg>

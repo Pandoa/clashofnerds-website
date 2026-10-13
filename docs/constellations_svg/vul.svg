@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Vulpecula">
+<title>Vulpecula</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="370" y1="30" x2="286.25" y2="33.21"/><line x1="286.25" y1="33.21" x2="242.64" y2="227.67"/><line x1="242.64" y1="227.67" x2="101.31" y2="196.67"/><line x1="101.31" y1="196.67" x2="30" y2="370"/></g>
+<g fill="url(#halo)"><circle cx="370" cy="30" r="12.48"/><circle cx="286.25" cy="33.21" r="12.48"/><circle cx="242.64" cy="227.67" r="12.48"/><circle cx="101.31" cy="196.67" r="12.48"/><circle cx="30" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="370" cy="30" r="4.8"/><circle cx="286.25" cy="33.21" r="4.8"/><circle cx="242.64" cy="227.67" r="4.8"/><circle cx="101.31" cy="196.67" r="4.8"/><circle cx="30" cy="370" r="4.8"/></g>
+</svg>

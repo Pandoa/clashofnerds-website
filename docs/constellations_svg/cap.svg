@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Capricornus">
+<title>Capricornus</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="30" y1="30" x2="42.79" y2="83.63"/><line x1="42.79" y1="83.63" x2="72.65" y2="155.17"/><line x1="72.65" y1="155.17" x2="138.2" y2="331.1"/><line x1="138.2" y1="331.1" x2="159.98" y2="370"/><line x1="159.98" y1="370" x2="218.2" y2="324.86"/><line x1="218.2" y1="324.86" x2="292.52" y2="263.65"/><line x1="292.52" y1="263.65" x2="332.13" y2="194.16"/><line x1="332.13" y1="194.16" x2="353.34" y2="180.01"/><line x1="353.34" y1="180.01" x2="370" y2="115.37"/><line x1="370" y1="115.37" x2="343.57" y2="128.01"/><line x1="343.57" y1="128.01" x2="275.7" y2="132.07"/><line x1="275.7" y1="132.07" x2="213.71" y2="141.47"/><line x1="213.71" y1="141.47" x2="30" y2="30"/></g>
+<g fill="url(#halo)"><circle cx="30" cy="30" r="12.48"/><circle cx="42.79" cy="83.63" r="12.48"/><circle cx="72.65" cy="155.17" r="12.48"/><circle cx="138.2" cy="331.1" r="12.48"/><circle cx="159.98" cy="370" r="13.29"/><circle cx="218.2" cy="324.86" r="12.48"/><circle cx="292.52" cy="263.65" r="12.48"/><circle cx="332.13" cy="194.16" r="18.16"/><circle cx="353.34" cy="180.01" r="12.48"/><circle cx="370" cy="115.37" r="12.48"/><circle cx="343.57" cy="128.01" r="12.48"/><circle cx="275.7" cy="132.07" r="12.48"/><circle cx="213.71" cy="141.47" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="30" cy="30" r="4.8"/><circle cx="42.79" cy="83.63" r="4.8"/><circle cx="72.65" cy="155.17" r="4.8"/><circle cx="138.2" cy="331.1" r="4.8"/><circle cx="159.98" cy="370" r="5.11"/><circle cx="218.2" cy="324.86" r="4.8"/><circle cx="292.52" cy="263.65" r="4.8"/><circle cx="332.13" cy="194.16" r="6.98"/><circle cx="353.34" cy="180.01" r="4.8"/><circle cx="370" cy="115.37" r="4.8"/><circle cx="343.57" cy="128.01" r="4.8"/><circle cx="275.7" cy="132.07" r="4.8"/><circle cx="213.71" cy="141.47" r="4.8"/></g>
+</svg>

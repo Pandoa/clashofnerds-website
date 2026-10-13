@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Chamaeleon">
+<title>Chamaeleon</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="33.02" y1="83.02" x2="30" y2="30"/><line x1="30" y1="30" x2="224.15" y2="188.52"/><line x1="224.15" y1="188.52" x2="343.46" y2="152.26"/><line x1="343.46" y1="152.26" x2="370" y2="254.68"/><line x1="370" y1="254.68" x2="238.77" y2="370"/><line x1="238.77" y1="370" x2="224.15" y2="188.52"/></g>
+<g fill="url(#halo)"><circle cx="33.02" cy="83.02" r="12.48"/><circle cx="30" cy="30" r="12.48"/><circle cx="224.15" cy="188.52" r="12.48"/><circle cx="343.46" cy="152.26" r="12.48"/><circle cx="370" cy="254.68" r="12.48"/><circle cx="238.77" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="33.02" cy="83.02" r="4.8"/><circle cx="30" cy="30" r="4.8"/><circle cx="224.15" cy="188.52" r="4.8"/><circle cx="343.46" cy="152.26" r="4.8"/><circle cx="370" cy="254.68" r="4.8"/><circle cx="238.77" cy="370" r="4.8"/></g>
+</svg>

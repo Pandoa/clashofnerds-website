@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Grus">
+<title>Grus</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="30" y1="30" x2="84.22" y2="75.9"/><line x1="84.22" y1="75.9" x2="93.63" y2="232.2"/><line x1="93.63" y1="232.2" x2="246.81" y2="230.6"/><line x1="246.81" y1="230.6" x2="370" y2="196.08"/><line x1="370" y1="196.08" x2="354.53" y2="159.71"/><line x1="354.53" y1="159.71" x2="250.52" y2="115.33"/><line x1="250.52" y1="115.33" x2="187.22" y2="159.19"/><line x1="187.22" y1="159.19" x2="93.63" y2="232.2"/><line x1="327.85" y1="354.28" x2="273" y2="323.99"/><line x1="273" y1="323.99" x2="246.81" y2="230.6"/><line x1="260" y1="370" x2="273" y2="323.99"/></g>
+<g fill="url(#halo)"><circle cx="30" cy="30" r="12.48"/><circle cx="84.22" cy="75.9" r="12.48"/><circle cx="93.63" cy="232.2" r="12.48"/><circle cx="246.81" cy="230.6" r="12.48"/><circle cx="370" cy="196.08" r="12.48"/><circle cx="354.53" cy="159.71" r="12.48"/><circle cx="250.52" cy="115.33" r="12.48"/><circle cx="187.22" cy="159.19" r="12.48"/><circle cx="327.85" cy="354.28" r="12.48"/><circle cx="273" cy="323.99" r="12.48"/><circle cx="260" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="30" cy="30" r="4.8"/><circle cx="84.22" cy="75.9" r="4.8"/><circle cx="93.63" cy="232.2" r="4.8"/><circle cx="246.81" cy="230.6" r="4.8"/><circle cx="370" cy="196.08" r="4.8"/><circle cx="354.53" cy="159.71" r="4.8"/><circle cx="250.52" cy="115.33" r="4.8"/><circle cx="187.22" cy="159.19" r="4.8"/><circle cx="327.85" cy="354.28" r="4.8"/><circle cx="273" cy="323.99" r="4.8"/><circle cx="260" cy="370" r="4.8"/></g>
+</svg>

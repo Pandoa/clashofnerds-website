@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Scorpius">
+<title>Scorpius</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="76.41" y1="30" x2="56.27" y2="34.93"/><line x1="56.27" y1="34.93" x2="40.59" y2="75.2"/><line x1="40.59" y1="75.2" x2="36.04" y2="125.14"/><line x1="36.04" y1="125.14" x2="30" y2="169.46"/><line x1="40.59" y1="75.2" x2="104.65" y2="117.68"/><line x1="104.65" y1="117.68" x2="129.89" y2="129.68"/><line x1="129.89" y1="129.68" x2="149.78" y2="155.19"/><line x1="149.78" y1="155.19" x2="193.66" y2="242.08"/><line x1="193.66" y1="242.08" x2="198.88" y2="295.77"/><line x1="198.88" y1="295.77" x2="205.41" y2="357.47"/><line x1="205.41" y1="357.47" x2="261.18" y2="370"/><line x1="261.18" y1="370" x2="338.47" y2="366.56"/><line x1="338.47" y1="366.56" x2="370" y2="325.51"/><line x1="370" y1="325.51" x2="327.07" y2="282.28"/></g>
+<g fill="url(#halo)"><circle cx="76.41" cy="30" r="12.48"/><circle cx="56.27" cy="34.93" r="12.48"/><circle cx="40.59" cy="75.2" r="12.48"/><circle cx="36.04" cy="125.14" r="12.48"/><circle cx="30" cy="169.46" r="12.48"/><circle cx="104.65" cy="117.68" r="12.48"/><circle cx="129.89" cy="129.68" r="12.48"/><circle cx="149.78" cy="155.19" r="12.48"/><circle cx="193.66" cy="242.08" r="12.48"/><circle cx="198.88" cy="295.77" r="12.48"/><circle cx="205.41" cy="357.47" r="29.52"/><circle cx="261.18" cy="370" r="12.48"/><circle cx="338.47" cy="366.56" r="12.48"/><circle cx="370" cy="325.51" r="26.89"/><circle cx="327.07" cy="282.28" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="76.41" cy="30" r="4.8"/><circle cx="56.27" cy="34.93" r="4.8"/><circle cx="40.59" cy="75.2" r="4.8"/><circle cx="36.04" cy="125.14" r="4.8"/><circle cx="30" cy="169.46" r="4.8"/><circle cx="104.65" cy="117.68" r="4.8"/><circle cx="129.89" cy="129.68" r="4.8"/><circle cx="149.78" cy="155.19" r="4.8"/><circle cx="193.66" cy="242.08" r="4.8"/><circle cx="198.88" cy="295.77" r="4.8"/><circle cx="205.41" cy="357.47" r="11.35"/><circle cx="261.18" cy="370" r="4.8"/><circle cx="338.47" cy="366.56" r="4.8"/><circle cx="370" cy="325.51" r="10.34"/><circle cx="327.07" cy="282.28" r="4.8"/></g>
+</svg>

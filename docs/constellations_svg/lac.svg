@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Lacerta">
+<title>Lacerta</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="153.6" y1="30" x2="329.93" y2="46.06"/><line x1="329.93" y1="46.06" x2="252.26" y2="75.72"/><line x1="252.26" y1="75.72" x2="165.8" y2="94.64"/><line x1="165.8" y1="94.64" x2="229.8" y2="136.19"/><line x1="229.8" y1="136.19" x2="121.24" y2="163.67"/><line x1="121.24" y1="163.67" x2="370" y2="216.74"/><line x1="370" y1="216.74" x2="242.02" y2="243.81"/><line x1="242.02" y1="243.81" x2="354.02" y2="339.44"/><line x1="354.02" y1="339.44" x2="30" y2="323.84"/><line x1="30" y1="323.84" x2="56.69" y2="370"/></g>
+<g fill="url(#halo)"><circle cx="153.6" cy="30" r="12.48"/><circle cx="329.93" cy="46.06" r="12.48"/><circle cx="252.26" cy="75.72" r="12.48"/><circle cx="165.8" cy="94.64" r="28.39"/><circle cx="229.8" cy="136.19" r="25.08"/><circle cx="121.24" cy="163.67" r="12.48"/><circle cx="370" cy="216.74" r="12.48"/><circle cx="242.02" cy="243.81" r="25.58"/><circle cx="354.02" cy="339.44" r="25.65"/><circle cx="30" cy="323.84" r="12.48"/><circle cx="56.69" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="153.6" cy="30" r="4.8"/><circle cx="329.93" cy="46.06" r="4.8"/><circle cx="252.26" cy="75.72" r="4.8"/><circle cx="165.8" cy="94.64" r="10.92"/><circle cx="229.8" cy="136.19" r="9.65"/><circle cx="121.24" cy="163.67" r="4.8"/><circle cx="370" cy="216.74" r="4.8"/><circle cx="242.02" cy="243.81" r="9.84"/><circle cx="354.02" cy="339.44" r="9.86"/><circle cx="30" cy="323.84" r="4.8"/><circle cx="56.69" cy="370" r="4.8"/></g>
+</svg>

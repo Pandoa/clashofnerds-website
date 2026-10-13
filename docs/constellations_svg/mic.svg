@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 396 396" width="396" height="396" role="img" aria-label="Star chart of Microscopium">
+<title>Microscopium</title>
+<defs>
+<radialGradient id="halo">
+<stop offset="0%" stop-color="#1cb0f5" stop-opacity="0.55"/>
+<stop offset="60%" stop-color="#1cb0f5" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#1cb0f5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect x="2" y="2" width="396" height="396" fill="#f5f6fa"/>
+<g stroke="#9aa0c4" stroke-width="1.2" stroke-linecap="round"><line x1="30" y1="93.27" x2="155.03" y2="33.36"/><line x1="155.03" y1="33.36" x2="338.84" y2="30"/><line x1="338.84" y1="30" x2="370" y2="370"/><line x1="370" y1="370" x2="30" y2="93.27"/></g>
+<g fill="url(#halo)"><circle cx="30" cy="93.27" r="12.48"/><circle cx="155.03" cy="33.36" r="12.48"/><circle cx="338.84" cy="30" r="12.48"/><circle cx="370" cy="370" r="12.48"/></g>
+<g fill="#0f1226"><circle cx="30" cy="93.27" r="4.8"/><circle cx="155.03" cy="33.36" r="4.8"/><circle cx="338.84" cy="30" r="4.8"/><circle cx="370" cy="370" r="4.8"/></g>
+</svg>
