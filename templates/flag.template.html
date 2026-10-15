@@ -6,7 +6,7 @@
 <title>{{flagPageTitle}}</title>
 <meta name="description" content="{{flagMetaDescription}}">
 <meta name="keywords" content="{{flagMetaKeywords}}">
-<meta property="og:site_name" content="Clash of Nerds">
+<meta property="og:site_name" content="{{appName}}">
 <meta property="og:title" content="{{flagPageTitle}}">
 <meta property="og:description" content="{{flagMetaDescription}}">
 <meta property="og:type" content="article">
@@ -30,10 +30,10 @@
   "description": "{{flagMetaDescription}}",
   "image": "{{flagImageUrl}}",
   "url": "{{url}}",
-  "author": { "@type": "Organization", "name": "Clash of Nerds" },
+  "author": { "@type": "Organization", "name": "{{appName}}" },
   "publisher": {
     "@type": "Organization",
-    "name": "Clash of Nerds",
+    "name": "{{appName}}",
     "logo": { "@type": "ImageObject", "url": "https://clashofnerds.com/logo.png" }
   }
 }
@@ -43,8 +43,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Flags", "item": "https://clashofnerds.com/{{lang}}/flags/" },
-    { "@type": "ListItem", "position": 2, "name": "Flag of {{countryName}}", "item": "{{url}}" }
+    { "@type": "ListItem", "position": 1, "name": "{{flags}}", "item": "https://clashofnerds.com/{{lang}}/flags/" },
+    { "@type": "ListItem", "position": 2, "name": "{{breadcrumbFlagOfCountry}}", "item": "{{url}}" }
   ]
 }
 </script>
@@ -55,17 +55,17 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does the flag of {{countryName}} look like?",
+      "name": "{{schemaFaqQAppearance}}",
       "acceptedAnswer": { "@type": "Answer", "text": "{{flagQuickAnswer}}" }
     },
     {
       "@type": "Question",
-      "name": "When was the flag of {{countryName}} adopted?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The flag of {{countryName}} was adopted on {{adoptedDate}}." }
+      "name": "{{schemaFaqQAdopted}}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{schemaFaqAAdopted}}" }
     },
     {
       "@type": "Question",
-      "name": "What do the colors of the {{countryName}} flag mean?",
+      "name": "{{schemaFaqQColors}}",
       "acceptedAnswer": { "@type": "Answer", "text": "{{colorMeaningSummary}}" }
     }
   ]
@@ -152,7 +152,7 @@ footer{padding:50px 20px 35px;border-top:1px solid var(--border);background:var(
 .site-footer__meta a{color:var(--muted);text-decoration:none}
 .site-footer__meta a:hover{color:var(--primary);text-decoration:underline}
 
-.site-lang {display: flex;align-items: center;justify-content: center; margin-left: 3px; margin-right: 3px}
+.site-lang {display: flex; align-items: center;justify-content: center; margin-left: 3px; margin-right: 3px}
 .site-lang > a {display: flex;align-items: center;justify-content: center;}
 .site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;margin-right: 4px;}
 
@@ -177,81 +177,81 @@ main{padding:20px 18px 60px}
 <img src="https://clashofnerds.com/logo.png" alt="{{appName}}">{{appName}}
 </a>
 <div class="nav-links">
-<a href="https://clashofnerds.com/{{lang}}/flags/">Flags</a>
-<a href="https://clashofnerds.com/{{lang}}/#privacy">Privacy</a>
+<a href="https://clashofnerds.com/{{lang}}/flags/">{{flags}}</a>
+<a href="https://clashofnerds.com/{{lang}}/#privacy">{{privacy}}</a>
 </div>
 </div>
 </nav>
 
-<div class="breadcrumbs" aria-label="Breadcrumb">
-<a href="https://clashofnerds.com/{{lang}}/flags/">Flags</a><span class="sep">›</span>
+<div class="breadcrumbs" aria-label="{{breadcrumbAriaLabel}}">
+<a href="https://clashofnerds.com/{{lang}}/flags/">{{flags}}</a><span class="sep">›</span>
 <span>{{countryName}}</span>
 </div>
 
 <main>
 
 <header class="flag-header">
-<h1>Flag of {{countryName}}<span>{{countryNameLocal}}</span></h1>
+<h1>{{flagOfCountry}}<span>{{countryNameLocal}}</span></h1>
 <p class="subtitle">{{flagSubtitle}}</p>
 </header>
 
 <figure class="flag-figure">
-<img src="{{flagImageUrl}}" alt="Flag of {{countryName}}" width="1200" height="800" loading="eager">
+<img src="{{flagImageUrl}}" alt="{{flagOfCountry}}" width="1200" height="800" loading="eager">
 <figcaption>{{flagCaption}}</figcaption>
 </figure>
 
 <div class="quick-answer">
-<p><strong>Quick answer:</strong> {{flagQuickAnswer}}</p>
+<p><strong>{{quickAnswerTitle}}</strong> {{flagQuickAnswer}}</p>
 </div>
 
 <div class="content">
 
-<h2>What the flag <span>looks like</span></h2>
+<h2>{{sectionAppearance}}</h2>
 <p>{{flagDescription}}</p>
 
 <div class="colors">
 {{flagColors}}
 </div>
 
-<h2>Colors and <span>meaning</span></h2>
+<h2>{{sectionColorsMeaning}}</h2>
 <p>{{colorMeaningSummary}}</p>
 {{colorMeaningDetailed}}
 
-<h2>History and <span>adoption</span></h2>
+<h2>{{sectionHistoryAdoption}}</h2>
 <p>{{flagHistory}}</p>
 
-<h2>Key <span>facts</span></h2>
+<h2>{{sectionKeyFacts}}</h2>
 <dl class="facts">
-<div class="fact"><dt>Adopted</dt><dd>{{adoptedDate}}</dd></div>
-<div class="fact"><dt>Proportion</dt><dd>{{flagProportion}}</dd></div>
-<div class="fact"><dt>Designer</dt><dd>{{flagDesigner}}</dd></div>
-<div class="fact"><dt>Capital</dt><dd>{{capitalCity}}</dd></div>
-<div class="fact"><dt>Country code</dt><dd>{{countryCode}}</dd></div>
-<div class="fact"><dt>Similar flags</dt><dd>{{similarFlags}}</dd></div>
+<div class="fact"><dt>{{factAdopted}}</dt><dd>{{adoptedDate}}</dd></div>
+<div class="fact"><dt>{{factProportion}}</dt><dd>{{flagProportion}}</dd></div>
+<div class="fact"><dt>{{factDesigner}}</dt><dd>{{flagDesigner}}</dd></div>
+<div class="fact"><dt>{{factCapital}}</dt><dd>{{capitalCity}}</dd></div>
+<div class="fact"><dt>{{factCountryCode}}</dt><dd>{{countryCode}}</dd></div>
+<div class="fact"><dt>{{factSimilarFlags}}</dt><dd>{{similarFlags}}</dd></div>
 </dl>
 
 {{flagVariants}}
 
-<h2>Frequently asked <span>questions</span></h2>
+<h2>{{sectionFaq}}</h2>
 
-<h3>What does the flag of {{countryName}} look like?</h3>
+<h3>{{faqQAppearance}}</h3>
 <p>{{flagQuickAnswer}}</p>
 
-<h3>When was the flag of {{countryName}} adopted?</h3>
-<p>The current flag of {{countryName}} was officially adopted on {{adoptedDate}}.</p>
+<h3>{{faqQAdopted}}</h3>
+<p>{{faqAAdopted}}</p>
 
-<h3>What do the colors mean?</h3>
+<h3>{{faqQColors}}</h3>
 <p>{{colorMeaningSummary}}</p>
 
-<h3>Which flags look similar to the {{countryName}} flag?</h3>
+<h3>{{faqQSimilar}}</h3>
 <p>{{similarFlagsAnswer}}</p>
 
 </div>
 
 <section class="cta">
-<div class="eyebrow">Think you know all 195?</div>
-<h2>Test yourself in <span>Clash of Nerds</span></h2>
-<p>Guess flags, capitals, constellations, elements and more. 1,000+ questions, 20 languages, free to play.</p>
+<div class="eyebrow">{{ctaEyebrow}}</div>
+<h2>{{ctaTitle}}</h2>
+<p>{{ctaText}}</p>
 <div class="badge-container">
 <a href="https://apps.apple.com/{{appstore_lang}}/app/clash-of-nerds-brain-battles/id6803526268"
    onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'app_store',location:'flag_page'});">
@@ -259,17 +259,17 @@ main{padding:20px 18px 60px}
 </a>
 <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
    onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'google_play',location:'flag_page'});">
-<img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_{{badge_lang}}.svg" alt="Get it on Google Play">
+<img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_{{badge_lang}}.svg" alt="{{googlePlayBadgeAlt}}">
 </a>
 </div>
 </section>
 
 <section class="related">
-<h2>Related flags</h2>
+<h2>{{relatedFlagsTitle}}</h2>
 <div class="related-grid">
 {{relatedFlags}}
 </div>
-<a class="hub-link" href="https://clashofnerds.com/{{lang}}/flags/">Browse all 195 flags →</a>
+<a class="hub-link" href="https://clashofnerds.com/{{lang}}/flags/">{{browseAllFlags}} →</a>
 </section>
 
 </main>
@@ -357,11 +357,11 @@ main{padding:20px 18px 60px}
   </style>
 <div class="site-footer__inner">
 <div class="site-footer__group">
-<h3 class="site-footer__title">Explore</h3>
+<h3 class="site-footer__title">{{explore}}</h3>
 <ul class="site-footer__list">{{pseoSites}}</ul>
 </div>
 <div class="site-footer__group">
-<h3 class="site-footer__title">Languages</h3>
+<h3 class="site-footer__title">{{languages}}</h3>
 <ul class="site-footer__list">{{langSites}}</ul>
 </div>
 <div class="site-footer__meta">

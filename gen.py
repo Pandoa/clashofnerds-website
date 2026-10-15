@@ -269,7 +269,7 @@ def main():
     for template in templates:
         language_files = os.listdir(os.path.join("lang", template))
 
-        languages = {}
+        languages: dict[str, list[dict[str, str]]] = {}
 
         for lang in language_files:
             with open(
@@ -336,6 +336,7 @@ def main():
                 )
 
                 props["langcode"] = lang
+                props["langpath"] = f"{lang}/" if (lang and lang != "") else ""
 
                 props["xlangs"] = "\n".join(
                     [
@@ -369,8 +370,9 @@ def main():
                 )
 
                 props["appstore_lang"] = app_store_locale_map[lang]
-
-                for key, value in props.items():
+                
+                total_props = {**all_props[0], **props}
+                for key, value in total_props.items():
                     if key in computed_keys:
                         value = computed_keys[key](all_props=all_props, props=props)
 
@@ -378,6 +380,7 @@ def main():
                         "{{" + key + "}}",
                         value or "",
                     )
+                    
 
                 out_dir = f"{root}/{template_dir[template]}"
                 os.makedirs(out_dir, exist_ok=True)

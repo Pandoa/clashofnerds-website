@@ -1,0 +1,75 @@
+[
+  {
+    "out_filename": "index.html",
+    "title": "Bandiere del mondo",
+    "lang": "it",
+    "appName": "Clash of Nerds",
+    "flags": "Bandiere",
+    "privacy": "Privacy",
+    "playStoreBadgeAlt": "Disponibile su Google Play",
+    "explore": "Esplora",
+    "languages": "Lingue",
+
+    "flagsHubTitle": "Bandiere del mondo — Tutte le 195 bandiere nazionali | Clash of Nerds",
+    "flagsHubMetaDescription": "Sfoglia tutte le 195 bandiere nazionali con nomi, colori, significati, storia e informazioni chiave. Cerca per Paese o continente e metti alla prova la tua conoscenza in Clash of Nerds.",
+    "flagsHubMetaKeywords": "bandiere del mondo, bandiere nazionali, significati delle bandiere, colori delle bandiere, bandiere degli stati, quiz sulle bandiere",
+
+    "url": "https://clashofnerds.com/it/flags/",
+    "canonical": "<link rel=\"canonical\" href=\"https://clashofnerds.com/it/flags/\">",
+    "xlangs": "<!-- generated hreflang links -->",
+    "continentCount": "<!-- generated -->",
+
+    "countryCount": "195",
+    "itemListJson": "<!-- generated ItemList elements -->",
+
+    "homeLabel": "Home",
+    "flagsLabel": "Bandiere",
+
+    "flagsFaqQ1": "Quante bandiere nazionali esistono?",
+    "flagsFaqA1": "Nel mondo ci sono 195 bandiere nazionali riconosciute: 193 Stati membri dell'ONU e 2 Stati osservatori.",
+
+    "flagsFaqQ2": "Posso cercare le bandiere per colore o continente?",
+    "flagsFaqA2": "Sì. Usa il campo di ricerca per trovare una bandiera per nome del Paese, codice Paese o continente. Puoi anche filtrare per la prima lettera del nome del Paese.",
+
+    "flagsFaqQ3": "Queste bandiere sono gratuite da usare?",
+    "flagsFaqA3": "Le immagini delle bandiere sono fornite a scopo didattico e di riferimento. Controlla i termini di licenza specifici per l'uso commerciale.",
+
+    "flagsHubH1": "Bandiere del mondo",
+    "flagsHubH1Sub": "Tutte le 195 bandiere nazionali",
+    "flagsHubSubtitle": "Sfoglia ogni bandiera nazionale con colori, significati, date di adozione e informazioni chiave. Cerca o salta per lettera.",
+
+    "statCountriesLabel": "Paesi",
+    "statContinentsLabel": "Continenti",
+    "statFlagsLabel": "Bandiere",
+
+    "searchLabel": "Cerca bandiere",
+    "searchPlaceholder": "Cerca Paese, codice o continente…",
+    "alphabetLabel": "Filtra per prima lettera",
+    "alphaAllLabel": "Tutte",
+
+    "flagSections": "<!-- generated continent sections -->",
+    "flagsCount": "<!-- generated -->",
+
+    "noResultsTitle": "Nessuna bandiera trovata",
+    "noResultsText": "Prova con un altro termine di ricerca o scegli un'altra lettera.",
+
+    "ctaEyebrow": "Pensi di conoscere tutte le 195?",
+    "ctaTitle": "Mettiti alla prova in",
+    "ctaTitleAccent": "Clash of Nerds",
+    "ctaText": "Indovina bandiere, capitali, costellazioni, elementi e altro. Oltre 1.000 domande, 20 lingue, gratis.",
+
+    "appStoreBadgeAlt": "Scarica su App Store",
+    "appstore_lang": "it",
+    "badge_lang": "it",
+
+    "relatedHubsTitle": "Altri quiz",
+    "relatedHubs": "<a href=\"https://clashofnerds.com/flags/\"><i>🏴</i> Bandiere del mondo</a><a href=\"https://clashofnerds.com/constellations/\"><i>🎯</i> Quiz sulle costellazioni</a>",
+    "capitalsHubLabel": "Capitali",
+    "constellationsHubLabel": "Costellazioni",
+    "elementsHubLabel": "Elementi",
+    "flagQuizLabel": "Quiz sulle bandiere",
+
+    "footerCopyright": "© 2025 Clash of Nerds",
+    "footerPrivacyLink": "Privacy"
+  }
+]

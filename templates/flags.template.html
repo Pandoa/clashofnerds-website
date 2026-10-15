@@ -48,7 +48,7 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "{{homeLabel}}", "item": "https://clashofnerds.com/{{lang}}/" },
+    { "@type": "ListItem", "position": 1, "name": "{{homeLabel}}", "item": "https://clashofnerds.com/{{langpath}}" },
     { "@type": "ListItem", "position": 2, "name": "{{flagsLabel}}", "item": "{{url}}" }
   ]
 }
@@ -206,18 +206,18 @@ main{padding:10px 18px 60px}
 
 <nav>
 <div class="nav-inner">
-<a class="logo" href="https://clashofnerds.com/{{lang}}/">
+<a class="logo" href="https://clashofnerds.com/{{langpath}}">
 <img src="https://clashofnerds.com/logo.png" alt="{{appName}}">{{appName}}
 </a>
 <div class="nav-links">
-<a href="https://clashofnerds.com/{{lang}}/flags/">Flags</a>
-<a href="https://clashofnerds.com/{{lang}}/#privacy">Privacy</a>
+<a href="https://clashofnerds.com/{{langpath}}/flags/">{{flags}}</a>
+<a href="https://clashofnerds.com/{{langpath}}#privacy">{{privacy}}</a>
 </div>
 </div>
 </nav>
 
 <div class="breadcrumbs" aria-label="Breadcrumb">
-<a href="https://clashofnerds.com/{{lang}}/">{{homeLabel}}</a><span class="sep">›</span>
+<a href="https://clashofnerds.com/{{langpath}}">{{homeLabel}}</a><span class="sep">›</span>
 <span>{{flagsLabel}}</span>
 </div>
 
@@ -298,7 +298,7 @@ main{padding:10px 18px 60px}
 </a>
 <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
    onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'google_play',location:'flags_hub'});">
-<img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_{{badge_lang}}.svg" alt="Get it on Google Play">
+<img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_{{badge_lang}}.svg" alt="{{playStoreBadgeAlt}}">
 </a>
 </div>
 </section>
@@ -322,17 +322,17 @@ main{padding:10px 18px 60px}
 <footer class="site-footer">
 <div class="site-footer__inner">
 <div class="site-footer__group">
-<h3 class="site-footer__title">Explore</h3>
+<h3 class="site-footer__title">{{explore}}</h3>
 <ul class="site-footer__list">{{pseoSites}}</ul>
 </div>
 <div class="site-footer__group">
-<h3 class="site-footer__title">Languages</h3>
+<h3 class="site-footer__title">{{languages}}</h3>
 <ul class="site-footer__list">{{langSites}}</ul>
 </div>
 <div class="site-footer__meta">
 <span>{{footerCopyright}}</span>
 <span aria-hidden="true">·</span>
-<a href="https://clashofnerds.com/{{lang}}/#privacy">{{footerPrivacyLink}}</a>
+<a href="https://clashofnerds.com/{{langpath}}#privacy">{{footerPrivacyLink}}</a>
 </div>
 </div>
 </footer>
