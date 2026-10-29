@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from datetime import date
 from pathlib import Path
 from collections import Counter
 
@@ -324,6 +325,8 @@ def main():
                     if props["out_filename"] != "index.html"
                     else ""
                 )
+                
+                props["date"] = date.today().isoformat()
 
                 path = (template_dir[template] + "/") if template_dir[template] else ""
 
