@@ -16,7 +16,7 @@
   <meta name="twitter:description" content="Migliaia di domande trivia su ogni argomento. Gioca da solo o sfida giocatori reali 1v1.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://clashofnerds.com/cover.png">
-  <link rel="icon" type="image/png" href="https://clashofnerds.com/favicon.png">
+  <link rel="icon" type="image/png" href="https://clashofnerds.com/favicon_512x512.png">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://clashofnerds.com/sitemap.xml">
   <link rel="alternate" type="text/markdown" href="https://clashofnerds.com/index.md">
   <meta name="apple-itunes-app" content="app-id=6803526268">
@@ -82,7 +82,7 @@
 }
 </script>
 <style>
-:root{--bg:#fff;--surface:#f5f6fa;--text:#0f1226;--muted:#6b7280;--primary:#1cb0f5;--secondary:#ce82ff;--border:#d5d7eb}
+:root{--bg:#fff;--surface:#f5f6fa;--text:#0f1226;--muted:#6b7280;--primary:#1ea9e9;--secondary:#c271f8;--border:#d5d7eb}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
 nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
@@ -147,7 +147,7 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 
 <nav>
 <div class="nav-inner">
-<div class="logo" onclick="location.hash='home'"><img src="https://clashofnerds.com/logo.png" alt="Clash of Nerds">Clash of Nerds</div>
+<div class="logo" onclick="location.hash='home'"><img src="https://clashofnerds.com/favicon_128x128.png" alt="Clash of Nerds">Clash of Nerds</div>
 <div class="nav-links"><a href="#home">Panoramica</a><a href="#privacy">Privacy</a></div>
 </div>
 </nav>
@@ -157,21 +157,27 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <section class="hero">
 <div class="hero-bg"><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div></div>
 <div class="hero-content">
-<img src="https://clashofnerds.com/logo.png" alt="Clash of Nerds — gioco domande trivia" id="top-logo">
+<img 
+  src="https://clashofnerds.com/favicon_512x512.png" 
+  alt="Clash of Nerds — gioco domande trivia" 
+  id="top-logo"
+  width="512px"
+  height="512px"
+  fetchpriority="high">
 <h1>DOMANDE TRIVIA.<br><span>AVVERSARI REALI.</span></h1>
 <p>Migliaia di domande trivia con risposte su geografia, scienza, bandiere, capitali, astronomia e chimica. Gioca da solo, o sfida giocatori reali in duelli quiz 1v1.</p>
 <div class="badge-container">
   <a href="https://apps.apple.com/it/app/clash-of-nerds-brain-battles/id6803526268"
      onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'app_store',location:'badges'});">
     <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/it"
-         alt="Scarica Clash of Nerds su App Store">
+         alt="Scarica Clash of Nerds su App Store"
+         width="120" height="40">
   </a>
   <a href="https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
      onclick="gtag('event','select_content',{content_type:'app_store_link',item_id:'google_play',location:'badges'});">
-    <img
-      src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_Italian.svg"
-      alt="Get it on Google Play"
-    />
+    <img src="https://clashofnerds.com/svg/GetItOnGooglePlay_Badge_Web_color_Italian.svg"
+         alt="Get it on Google Play"
+         width="646" height="250">
   </a>
 </div>
 </div>
@@ -201,12 +207,12 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <h2>DOMANDE TRIVIA<br><span>SU OGNI ARGOMENTO</span></h2>
 <p>Migliaia di domande e risposte trivia su geografia, scienza, paesi, capitali, bandiere, astronomia e chimica. Gioca da solo per imparare, o sfida giocatori reali 1v1 per dimostrarlo.</p>
 <div class="pills">
-<span class="pill"><img src="https://clashofnerds.com/icons/countries.png" width="25px" alt="south africa flag"/>Paesi</span>
-<span class="pill"><img src="https://clashofnerds.com/icons/capitals.png" width="25px" alt="togo flag"/>Capitali</span>
-<a class="pill-link" href="https://clashofnerds.com/flags/"><span class="pill"><img src="https://clashofnerds.com/icons/flags_4.png" width="25px" alt="saint pierre and miquelon flag"/>Bandiere</span></a>
-<span class="pill"><img src="https://clashofnerds.com/icons/jupiter_32x32.png" width="25px" alt="jupiter"/>Astronomia</span>
-<span class="pill"><img src="https://clashofnerds.com/icons/periodic_table.png" width="25px" alt="periodic table"/>Chimica</span>
-<a class="pill-link" href="https://clashofnerds.com/constellations/"><span class="pill"><img src="https://clashofnerds.com/icons/constellations.png" width="25px" alt="constellation"/>Cultura generale</span></a>
+<span class="pill"><img src="https://clashofnerds.com/icons/countries.png" height="25px" width="25px" alt="south africa flag"/>Paesi</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/capitals.png" height="25px" width="25px" alt="togo flag"/>Capitali</span>
+<a class="pill-link" href="https://clashofnerds.com/flags/"><span class="pill"><img src="https://clashofnerds.com/icons/flags_4.png" height="25px" width="25px" alt="saint pierre and miquelon flag"/>Bandiere</span></a>
+<span class="pill"><img src="https://clashofnerds.com/icons/jupiter_32x32.png" height="25px" width="25px" alt="jupiter"/>Astronomia</span>
+<span class="pill"><img src="https://clashofnerds.com/icons/periodic_table.png" height="25px" width="25px" alt="periodic table"/>Chimica</span>
+<a class="pill-link" href="https://clashofnerds.com/constellations/"><span class="pill"><img src="https://clashofnerds.com/icons/constellations.png" width="25px" height="25px" alt="constellation"/>Cultura generale</span></a>
 </div>
 </section>
 
