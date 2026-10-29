@@ -293,6 +293,7 @@ def main():
             [
                 f'<li class="site-lang"><a href="https://clashofnerds.com/{lang}">'
                 f'<img src="https://flagcdn.com/w40/{flags[lang or "en"]}.png" '
+                f' width="40px" height="27px"'
                 f'alt="flag {lang}">'
                 f'{LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang or "en") or LANGUAGE_TO_GOOGLE_PLAY_BADGE.get(lang.split("-")[0]) or "English"}'
                 f"</a></li>"
