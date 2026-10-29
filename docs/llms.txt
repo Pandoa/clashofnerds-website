@@ -1,0 +1,20 @@
+# Clash of Nerds
+
+> Clash of Nerds is a 1v1 trivia quiz game covering geography, flags, astronomy, chemistry, and general knowledge — playable in 20 languages.
+
+Clash of Nerds is a knowledge quiz app for iOS and Android. Players compete in real-time 1v1 trivia duels across topics such as countries, capitals, flags, astronomy, and chemistry. The website provides free, browsable reference pages for flags and constellations, while the app offers over 1,000 questions, trophy progression, and topic unlocking. The game is free to play and supports 20 languages.
+
+## Download the App
+
+- [Download on the App Store](https://apps.apple.com/app/clash-of-nerds-iq-trivia-duel/id6803526268): Play Clash of Nerds on iPhone and iPad.
+- [Get it on Google Play](https://play.google.com/store/apps/details?id=com.pandores.clashofnerds): Play Clash of Nerds on Android devices.
+
+## Core Content
+
+- [Clash of Nerds — Quiz Duel](https://clashofnerds.com): 1v1 trivia duels across every topic, including geography, science, flags, astronomy, and chemistry.
+- [Flags of the World](https://clashofnerds.com/flags/): Browse all 195 country flags with colors, meanings, adoption dates, and key facts; search or jump by letter.
+- [All 88 Constellations](https://clashofnerds.com/constellations/): Explore every constellation in the sky — zodiac signs, northern stars, equatorial patterns, and southern treasures — with star charts, mythology, and viewing tips.
+
+## Optional
+
+- [Clash of Nerds Home](https://clashofnerds.com): Main landing page and app overview.
