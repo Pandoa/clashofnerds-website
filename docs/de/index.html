@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="de">
   <head>
   <meta charset="UTF-8">
@@ -49,7 +49,7 @@
   "applicationCategory": "GameApplication",
   "operatingSystem": "iOS, Android",
   "url": "https://clashofnerds.com/de/",
-  "dateModified": "2026-10-29",
+  "dateModified": "2026-11-04",
   "inLanguage": "de",
   "image": "https://clashofnerds.com/cover.png",
   "datePublished": "2026-01-01",
@@ -124,20 +124,7 @@ nav{width:100%;height:70px;padding:0 24px;display:flex;align-items:center;justif
 
 .cta-section{text-align:center;padding:90px 20px;background:#fff}.cta-section .eyebrow{font-size:11px;font-weight:950;letter-spacing:2px;color:var(--primary)}.cta-section h2{margin:10px 0;font-size:clamp(32px,6vw,50px);line-height:.95;letter-spacing:-2px;text-transform:uppercase}.email-btn{color:var(--primary);font-size:18px;font-weight:900;text-decoration:none}.email-btn:hover{color:var(--secondary)}
 
-#privacy-page{display:none;max-width:760px;margin:auto;padding:70px 24px}#privacy-page h2{font-size:clamp(38px,7vw,56px);line-height:1;letter-spacing:-2px;text-transform:uppercase;color:var(--primary)}.privacy-content{color:var(--muted);line-height:1.8;font-size:16px}.privacy-content strong{color:var(--text)}.privacy-content h3{color:var(--secondary);margin-top:35px;text-transform:uppercase;font-size:14px}.privacy-content a{color:var(--primary);font-weight:700;text-decoration:none}
 footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:11px;font-weight:700;border-top:1px solid var(--border)}
-
-footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);font-size:11px;font-weight:700;text-align:center}
-.footer-sites{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;line-height:1.8}
-.footer-sites a{color:var(--muted);text-decoration:none;font-size:11px;font-weight:600}
-.footer-sites a:hover{color:var(--primary);text-decoration:underline}
-.footer-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.footer-meta a{color:var(--muted);text-decoration:none;font-weight:700}
-.footer-meta a:hover{color:var(--primary);text-decoration:underline}
-
-.site-lang {display: flex;align-items: center;justify-content: center; margin-left: 3px; margin-right: 3px}
-.site-lang > a {display: flex;align-items: center;justify-content: center;}
-.site-lang > a > img {border-radius: 6px; height: 20px; border: 1px solid #666;margin-right: 4px;}
 
 @media(max-width:650px){nav{padding:0 16px}.logo{font-size:14px}.logo img{width:31px;height:31px}.nav-links{gap:16px}.nav-links a{font-size:10px}.hero{padding-top:55px}.hero h1{letter-spacing:-2.5px}.frame{width:210px}.carousel{gap:16px}.section,.languages,.cta-section{padding:70px 20px}.language-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -147,8 +134,11 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 
 <nav>
 <div class="nav-inner">
-<div class="logo" onclick="location.hash='home'"><img src="https://clashofnerds.com/favicon_128x128.png" alt="Clash of Nerds">Clash of Nerds</div>
-<div class="nav-links"><a href="#home">Übersicht</a><a href="#privacy">Datenschutz</a></div>
+<div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})"><img src="https://clashofnerds.com/favicon_128x128.png" alt="Clash of Nerds">Clash of Nerds</div>
+<div class="nav-links">
+  <a href="#home" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Übersicht</a>
+  <a href="https://clashofnerds.com/privacy">Datenschutz</a>
+</div>
 </div>
 </nav>
 
@@ -265,47 +255,6 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
 <p style="margin-top:25px"><a href="mailto:support@clashofnerds.com" class="email-btn">support@clashofnerds.com</a></p>
 </section>
 
-</main>
-
-<main id="privacy-page">
-<h2>PRIVACY POLICY</h2>
-<div class="privacy-content">
-<p><strong>Last Updated: August 31, 2026</strong></p>
-<p>This Privacy Policy governs your use of the mobile application Clash of Nerds ("the App"). Clash of Nerds is a knowledge quiz game designed for iOS and Android platforms.</p>
-
-<h3>1. Data Collection & Usage</h3>
-<p>Clash of Nerds does not directly collect or store personal information such as your name, email address, or physical address on our own servers. However, the App utilizes trusted third-party services that automatically collect and process certain information to provide analytics and serve advertisements.</p>
-
-<h3>2. Analytics (Google Firebase)</h3>
-<p>We use Google Firebase Analytics to understand how users interact with the App, optimize gameplay features, and monitor app performance. Firebase Analytics may collect and process:</p>
-<ul>
-    <li><strong>Product Interaction:</strong> App launches, screen views, taps, clicks, and gameplay progression.</li>
-    <li><strong>Device Identifiers:</strong> Identifier for Vendors (IDFV) and basic device telemetry data.</li>
-</ul>
-
-<h3>3. Advertising (Google AdMob)</h3>
-<p>We partner with Google AdMob to display advertisements within the App. To deliver, personalize, and measure the effectiveness of ads, AdMob may access and use:</p>
-<ul>
-    <li><strong>Advertising Identifiers:</strong> Identifier for Advertisers (IDFA on iOS) and Google Advertising ID (on Android).</li>
-    <li><strong>Location Data:</strong> Coarse/IP-based approximate location data to ensure regional ad relevance.</li>
-    <li><strong>Advertising Interaction:</strong> Information regarding the specific advertisements you view, click, or interact with.</li>
-</ul>
-<p>Data collected by Google AdMob and Firebase Analytics may be linked to your device identifier and used for cross-app tracking purposes. You can manage or restrict ad tracking at any time via your device system settings (e.g., Apple's App Tracking Transparency prompt or iOS Tracking settings).</p>
-
-<h3>4. In-App Purchases</h3>
-<p>Clash of Nerds offers digital content for purchase. All transactions are securely handled directly by the respective platform app stores:</p>
-<ul>
-    <li><strong>Apple App Store:</strong> Managed via your Apple ID and subject to Apple's Privacy Policy.</li>
-    <li><strong>Google Play Store:</strong> Managed via your Google Account and subject to Google's Privacy Policy.</li>
-</ul>
-<p>The App does not receive, process, or store your credit card numbers, billing addresses, or financial bank details. We only receive a secure transactional token from the app store confirming the purchase to unlock your digital content.</p>
-
-<h3>5. Your Rights & Data Retention</h3>
-<p>We respect your privacy rights. Because we do not host personal profiles or user accounts on an external server database, you can completely erase your localized app history by clearing the App data or uninstalling the App from your mobile device. Cross-app tracking permissions can be modified globally in your device's operating system settings.</p>
-
-<h3>6. Contact Us</h3>
-<p>If you have any questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:support@clashofnerds.com">support@clashofnerds.com</a>.</p>
-</div>
 </main>
 
 <footer class="site-footer">
@@ -470,26 +419,33 @@ footer{padding:30px 20px;border-top:1px solid var(--border);color:var(--muted);f
     <div class="site-footer__meta">
       <span>© 2026 Clash of Nerds • Alle Rechte vorbehalten</span>
       <span aria-hidden="true">·</span>
-      <a href="#privacy">Datenschutzerklärung</a>
+      <a href="https://clashofnerds.com/privacy">Datenschutzerklärung</a>
     </div>
   </div>
 </footer>
 
 <script>
-function show(page){
-  const home = document.getElementById('home-page');
-  home.style.display = page === 'home' ? 'block' : 'none';
-  document.getElementById('privacy-page').style.display = page === 'privacy' ? 'block' : 'none';
-  if(page === 'privacy' && location.hash !== '#privacy') {
-    location.hash = 'privacy';
-  } else if(page === 'home' && location.hash) {
-    history.replaceState(null, '', location.pathname);
-  }
-  window.scrollTo(0,0);
-}
+  // Privacy policy lives on its own page (English only).
+  // Any legacy #privacy link is sent there immediately.
+  (function () {
+    var PRIVACY_URL = 'https://clashofnerds.com/privacy';
 
-window.addEventListener('hashchange', () => show(location.hash.substring(1) || 'home'));
-window.addEventListener('DOMContentLoaded', () => show(location.hash.substring(1) || 'home'));
+    function redirectIfPrivacy() {
+      if (location.hash === '#privacy' || location.hash === '#/privacy') {
+        location.replace(PRIVACY_URL);
+        return true;
+      }
+      return false;
+    }
+
+    window.addEventListener('hashchange', redirectIfPrivacy);
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', redirectIfPrivacy);
+    } else {
+      redirectIfPrivacy();
+    }
+  })();
 </script>
 	<script>
   (function () {
