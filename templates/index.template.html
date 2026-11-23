@@ -1,68 +1,147 @@
 <!DOCTYPE html>
-  <html lang="{{lang}}">
-  <head>
+<html lang="{{lang}}">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <title>{{title}}</title>
   <meta name="description" content="{{metaDescription}}">
   <meta name="keywords" content="{{metaKeywords}}">
+
   <meta property="og:site_name" content="Clash of Nerds">
   <meta property="og:title" content="{{ogTitle}}">
   <meta property="og:description" content="{{ogDescription}}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{url}}">
   <meta property="og:image" content="https://clashofnerds.com/cover.png">
+
   <meta name="twitter:title" content="{{ogTitle}}">
   <meta name="twitter:description" content="{{ogDescription}}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://clashofnerds.com/cover.png">
+
   <link rel="icon" type="image/png" href="https://clashofnerds.com/favicon_512x512.png">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://clashofnerds.com/sitemap.xml">
   <link rel="alternate" type="text/markdown" href="https://clashofnerds.com/index.md">
+
   <meta name="apple-itunes-app" content="app-id=6803526268">
+
   {{canonical}}
   {{xlangs}}
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["VideoGame", "MobileApplication"],
-  "name": "Clash of Nerds: Duel Quiz",
-  "description": "{{metaDescription}}",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "iOS, Android",
-  "url": "{{url}}",
-  "dateModified": "{{date}}",
-  "inLanguage": "{{lang}}",
-  "image": "https://clashofnerds.com/cover.png",
-  "datePublished": "2026-01-01",
-  "downloadUrl": [
-    "https://apps.apple.com/{{appstore_lang}}/app/clash-of-nerds-brain-battles/id6803526268",
-    "https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
-  ],
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://clashofnerds.com/#organization",
+        "name": "Clash of Nerds",
+        "url": "https://clashofnerds.com/",
+        "logo": "https://clashofnerds.com/favicon.png",
+        "description": "A 1v1 trivia quiz game covering geography, flags, astronomy, chemistry, and general knowledge — playable in 20 languages.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@clashofnerds.com"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://clashofnerds.com/#website",
+        "url": "https://clashofnerds.com/",
+        "name": "Clash of Nerds",
+        "publisher": {
+          "@id": "https://clashofnerds.com/#organization"
+        },
+        "inLanguage": "{{lang}}"
+      },
+      {
+        "@type": ["VideoGame", "MobileApplication"],
+        "@id": "https://clashofnerds.com/#game",
+        "name": "Clash of Nerds: Duel Quiz",
+        "description": "{{metaDescription}}",
+        "applicationCategory": "GameApplication",
+        "genre": [
+          "Trivia",
+          "Quiz",
+          "Educational"
+        ],
+        "gamePlatform": [
+          "iOS",
+          "Android"
+        ],
+        "operatingSystem": [
+          "iOS",
+          "Android"
+        ],
+        "url": "https://clashofnerds.com/",
+        "image": "https://clashofnerds.com/cover.png",
+        "datePublished": "2026-01-01",
+        "dateModified": "{{date}}",
+        "inLanguage": "{{lang}}",
+        "isAccessibleForFree": true,
+        "author": {
+          "@id": "https://clashofnerds.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://clashofnerds.com/#organization"
+        },
+        "downloadUrl": [
+          "https://apps.apple.com/{{appstore_lang}}/app/clash-of-nerds-brain-battles/id6803526268",
+          "https://play.google.com/store/apps/details?id=com.pandores.clashofnerds"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://clashofnerds.com/#organization",
-  "name": "Clash of Nerds",
-  "url": "https://clashofnerds.com",
-  "logo": "https://clashofnerds.com/favicon.png",
-  "description": "A 1v1 trivia quiz game covering geography, flags, astronomy, chemistry, and general knowledge — playable in 20 languages.",
-  "sameAs": [],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer support",
-    "email": "support@clashofnerds.com"
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "{{faqQuestion1}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{faqAnswer1}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{faqQuestion2}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{faqAnswer2}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{faqQuestion3}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{faqAnswer3}}"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "{{faqQuestion4}}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{faqAnswer4}}"
+        }
+      }
+    ]
   }
-}
-</script>
+  </script>
 <style>
 :root{--bg:#fff;--surface:#f5f6fa;--text:#0f1226;--muted:#6b7280;--primary:#1ea9e9;--secondary:#c271f8;--border:#d5d7eb}
 *{box-sizing:border-box}html{scroll-behavior:smooth}

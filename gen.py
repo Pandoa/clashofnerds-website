@@ -327,6 +327,12 @@ def main():
                     else ""
                 )
                 
+                props = {
+                    **languages[""][0],
+                    **all_props[0],
+                    **props
+                }
+                
                 props["date"] = date.today().isoformat()
 
                 path = (template_dir[template] + "/") if template_dir[template] else ""
