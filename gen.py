@@ -475,6 +475,26 @@ def main():
                 )
 
                 sitemap += "  <url>\n" f"    <loc>{url}</loc>\n"
+                
+                priority = (
+                    "1.0"
+                    if props["out_filename"] == "index.html"
+                    else "0.8"
+                    if props["out_filename"] == "flags.html"
+                    else "0.8"
+                    if props["out_filename"] == "constellations.html"
+                    else "0.75"
+                    if props["out_filename"] == "trivia-questions.html"
+                    else "0.75"
+                    if props["out_filename"] == "general-knowledge-quiz"
+                    else "0.7"
+                    if template in ("capitals", "astronomy", "chemistry")
+                    else "0.5"
+                )
+
+                sitemap += (
+                    f"    <priority>{priority}</priority>\n"
+                )
 
                 for other_lang, other_props in pages_for_filename.items():
                     other_prefix = f"/{other_lang}" if other_lang else ""
