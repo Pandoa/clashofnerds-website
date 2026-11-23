@@ -47,7 +47,15 @@
     "footerNetworkAriaLabel": "La nostra rete",
     "footerNetworkTitle": "Altro dalla nostra rete",
     "footerPrivacyLink": "Informativa sulla privacy",
-    "footerCopyright": "© 2026 Clash of Nerds • Tutti i diritti riservati"
+    "footerCopyright": "© 2026 Clash of Nerds • Tutti i diritti riservati",
+    "faqQuestion1": "Che cos'è Clash of Nerds?",
+    "faqAnswer1": "Clash of Nerds è un gioco a quiz multiplayer in cui i giocatori si sfidano in duelli 1 contro 1 su argomenti come geografia, bandiere, scienze e cultura generale.",
+    "faqQuestion2": "Clash of Nerds è gratuito?",
+    "faqAnswer2": "Clash of Nerds può essere scaricato e giocato gratuitamente. Sono disponibili acquisti in-app opzionali.",
+    "faqQuestion3": "Quante lingue supporta Clash of Nerds?",
+    "faqAnswer3": "Clash of Nerds è disponibile in più di 20 lingue.",
+    "faqQuestion4": "Posso giocare contro altri giocatori?",
+    "faqAnswer4": "Sì. Clash of Nerds permette ai giocatori di sfidarsi in duelli a quiz multiplayer 1 contro 1."
   },
   {
     "out_filename": "geography-quiz.html",
