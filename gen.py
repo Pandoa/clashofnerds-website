@@ -9,7 +9,7 @@ LANGUAGE_TO_GOOGLE_PLAY_BADGE = {
     "af": "Afrikaans",
     "sq": "Albanian",
     "ar-SA": "Arabic-Saudi-Arabia",
-    "sa": "Arabic",
+    "ar": "Arabic",
     "hy": "Armenian",
     "az": "Azerbaijani",
     "eu": "Basque",
