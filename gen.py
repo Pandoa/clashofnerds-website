@@ -484,6 +484,8 @@ def main():
                     else "0.8"
                     if props["out_filename"] == "constellations.html"
                     else "0.75"
+                    if props["out_filename"] == "flags-quiz.html"
+                    else "0.75"
                     if props["out_filename"] == "trivia-questions.html"
                     else "0.75"
                     if props["out_filename"] == "general-knowledge-quiz"
